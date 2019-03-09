@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xnxqsz">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Xnxqsz">
+		select * from mitu_xnxqsz
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					name like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Xnxqsz">
+		select *
+		from mitu_xnxqsz where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Xnxqsz">
+		update mitu_xnxqsz
+		<set>
+			<if test="xn != null and xn != ''">
+				xn=#{xn},
+			</if>
+			<if test="xq != null and xq != ''">
+				xq=#{xq},
+			</if>
+			<if test="kxsj != null and kxsj != ''">
+				kxsj=#{kxsj},
+			</if>
+			<if test="jssj != null and jssj != ''">
+				jssj=#{jssj},
+			</if>
+			<if test="zs != null and zs != ''">
+				zs=#{zs},
+			</if>
+			<if test="xsbdsj != null and xsbdsj != ''">
+				xsbdsj=#{xsbdsj},
+			</if>
+			<if test="zckjxrcapkfkssj != null and zckjxrcapkfkssj != ''">
+				zckjxrcapkfkssj=#{zckjxrcapkfkssj},
+			</if>
+			<if test="zckjxrcapkfjssj != null and zckjxrcapkfjssj != ''">
+				zckjxrcapkfjssj=#{zckjxrcapkfjssj},
+			</if>
+			<if test="cjlrkssj != null and cjlrkssj != ''">
+				cjlrkssj=#{cjlrkssj},
+			</if>
+			<if test="cjlrjssj != null and cjlrjssj != ''">
+				cjlrjssj=#{cjlrjssj},
+			</if>
+			<if test="remark != null and remark != ''">
+				remark=#{remark},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Xnxqsz">
+		insert into mitu_xnxqsz(
+			xn,
+			xq,
+			kxsj,
+			jssj,
+			zs,
+			xsbdsj,
+			zckjxrcapkfkssj,
+			zckjxrcapkfjssj,
+			cjlrkssj,
+			cjlrjssj,
+			remark)
+		values(
+			#{xn},
+			#{xq},
+			#{kxsj},
+			#{jssj},
+			#{zs},
+			#{xsbdsj},
+			#{zckjxrcapkfkssj},
+			#{zckjxrcapkfjssj},
+			#{cjlrkssj},
+			#{cjlrjssj},
+			#{remark}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_xnxqsz where id in
+		<foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>

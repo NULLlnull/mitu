@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bjxx">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Bjxx">
+		select * from mitu_bjxx
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					bjmc like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="queryAll" parameterType="java.util.HashMap"
+			resultType="Bjxx">
+		select * from mitu_bjxx
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Bjxx">
+		select *
+		from mitu_bjxx where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Bjxx">
+		update mitu_bjxx
+		<set>
+			<if test="ssxy != null and ssxy != ''">
+				ssxy=#{ssxy},
+			</if>
+			<if test="ssxq != null and ssxq != ''">
+				ssxq=#{ssxq},
+			</if>
+			<if test="ssxqmc != null and ssxqmc != ''">
+				ssxqmc=#{ssxqmc},
+			</if>
+			<if test="ssxb != null and ssxb != ''">
+				ssxb=#{ssxb},
+			</if>
+			<if test="ssxbmc != null and ssxbmc != ''">
+				ssxbmc=#{ssxbmc},
+			</if>
+			<if test="sszy != null and sszy != ''">
+				sszy=#{sszy},
+			</if>
+			<if test="sszymc != null and sszymc != ''">
+				sszymc=#{sszymc},
+			</if>
+			<if test="pydx != null and pydx != ''">
+				pydx=#{pydx},
+			</if>
+			<if test="pydxmc != null and pydxmc != ''">
+				pydxmc=#{pydxmc},
+			</if>
+			<if test="pycc != null and pycc != ''">
+				pycc=#{pycc},
+			</if>
+			<if test="pyccmc != null and pyccmc != ''">
+				pyccmc=#{pyccmc},
+			</if>
+			<if test="zyfx != null and zyfx != ''">
+				zyfx=#{zyfx},
+			</if>
+			<if test="zyfxmc != null and zyfxmc != ''">
+				zyfxmc=#{zyfxmc},
+			</if>
+			<if test="bjdm != null and bjdm != ''">
+				bjdm=#{bjdm},
+			</if>
+			<if test="bjmc != null and bjmc != ''">
+				bjmc=#{bjmc},
+			</if>
+			<if test="bjjc != null and bjjc != ''">
+				bjjc=#{bjjc},
+			</if>
+			<if test="nj != null and nj != ''">
+				nj=#{nj},
+			</if>
+			<if test="xz != null and xz != ''">
+				xz=#{xz},
+			</if>
+			<if test="xzshow != null and xzshow != ''">
+				xzshow=#{xzshow},
+			</if>
+			<if test="jlsj != null and jlsj != ''">
+				jlsj=#{jlsj},
+			</if>
+			<if test="byjb != null and byjb != ''">
+				byjb=#{byjb},
+			</if>
+			<if test="bjzxrs != null and bjzxrs != ''">
+				bjzxrs=#{bjzxrs},
+			</if>
+			<if test="bjzxrs_m != null and bjzxrs_m != ''">
+				bjzxrs_m=#{bjzxrs_m},
+			</if>
+			<if test="bjzxrs_f != null and bjzxrs_f != ''">
+				bjzxrs_f=#{bjzxrs_f},
+			</if>
+			<if test="bjsjzxrs != null and bjsjzxrs != ''">
+				bjsjzxrs=#{bjsjzxrs},
+			</if>
+			<if test="bjsjzxrs_m != null and bjsjzxrs_m != ''">
+				bjsjzxrs_m=#{bjsjzxrs_m},
+			</if>
+			<if test="bjsjzxrs_f != null and bjsjzxrs_f != ''">
+				bjsjzxrs_f=#{bjsjzxrs_f},
+			</if>
+			<if test="remark != null and remark != ''">
+				remark=#{remark},
+			</if>
+			<if test="tybz != null and tybz != ''">
+				tybz=#{tybz},
+			</if>
+			<if test="fdy != null and fdy != ''">
+				fdy=#{fdy},
+			</if>
+			<if test="fdyxm != null and fdyxm != ''">
+				fdyxm=#{fdyxm},
+			</if>
+			<if test="xw != null and xw != ''">
+				xw=#{xw},
+			</if>
+			<if test="xwxm != null and xwxm != ''">
+				xwxm=#{xwxm},
+			</if>
+			<if test="xwfzkqkf != null and xwfzkqkf != ''">
+				xwfzkqkf=#{xwfzkqkf},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Bjxx">
+		insert into mitu_bjxx(
+			ssxy,
+			ssxq,
+			ssxqmc,
+			ssxb,
+			ssxbmc,
+			sszy,
+			sszymc,
+			pydx,
+			pydxmc,
+			pycc,
+			pyccmc,
+			zyfx,
+			zyfxmc,
+			bjdm,
+			bjmc,
+			bjjc,
+			nj,
+			xz,
+			xzshow,
+			jlsj,
+			byjb,
+			bjzxrs,
+			bjzxrs_m,
+			bjzxrs_f,
+			bjsjzxrs,
+			bjsjzxrs_m,
+			bjsjzxrs_f,
+			remark,
+			tybz,
+			fdy,
+			fdyxm,
+			xw,
+			xwxm,
+			xwfzkqkf)
+		values(
+			#{ssxy},
+			#{ssxq},
+			#{ssxqmc},
+			#{ssxb},
+			#{ssxbmc},
+			#{sszy},
+			#{sszymc},
+			#{pydx},
+			#{pydxmc},
+			#{pycc},
+			#{pyccmc},
+			#{zyfx},
+			#{zyfxmc},
+			#{bjdm},
+			#{bjmc},
+			#{bjjc},
+			#{nj},
+			#{xz},
+			#{xzshow},
+			#{jlsj},
+			#{byjb},
+			#{bjzxrs},
+			#{bjzxrs_m},
+			#{bjzxrs_f},
+			#{bjsjzxrs},
+			#{bjsjzxrs_m},
+			#{bjsjzxrs_f},
+			#{remark},
+			#{tybz},
+			#{fdy},
+			#{fdyxm},
+			#{xw},
+			#{xwxm},
+			#{xwfzkqkf}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_bjxx where id in
+		<foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>

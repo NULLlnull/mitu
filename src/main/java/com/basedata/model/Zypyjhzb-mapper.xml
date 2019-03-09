@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zypyjhzb">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Zypyjhzb">
+		select * from mitu_zypyjhzb
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					name like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Zypyjhzb">
+		select *
+		from mitu_zypyjhzb where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Zypyjhzb">
+		update mitu_zypyjhzb
+		<set>
+			<if test="sszy != null and sszy != ''">
+				sszy=#{sszy},
+			</if>
+			<if test="ksnj != null and ksnj != ''">
+				ksnj=#{ksnj},
+			</if>
+			<if test="jhlx != null and jhlx != ''">
+				jhlx=#{jhlx},
+			</if>
+			<if test="zyfx != null and zyfx != ''">
+				zyfx=#{zyfx},
+			</if>
+			<if test="zyfxmc != null and zyfxmc != ''">
+				zyfxmc=#{zyfxmc},
+			</if>
+			<if test="khfs != null and khfs != ''">
+				khfs=#{khfs},
+			</if>
+			<if test="xqzxs != null and xqzxs != ''">
+				xqzxs=#{xqzxs},
+			</if>
+			<if test="jkxs != null and jkxs != ''">
+				jkxs=#{jkxs},
+			</if>
+			<if test="syxs != null and syxs != ''">
+				syxs=#{syxs},
+			</if>
+			<if test="sjxs != null and sjxs != ''">
+				sjxs=#{sjxs},
+			</if>
+			<if test="zxs != null and zxs != ''">
+				zxs=#{zxs},
+			</if>
+			<if test="zs != null and zs != ''">
+				zs=#{zs},
+			</if>
+			<if test="kcxf != null and kcxf != ''">
+				kcxf=#{kcxf},
+			</if>
+			<if test="ssxy != null and ssxy != ''">
+				ssxy=#{ssxy},
+			</if>
+			<if test="ssxb != null and ssxb != ''">
+				ssxb=#{ssxb},
+			</if>
+			<if test="ssxbmc != null and ssxbmc != ''">
+				ssxbmc=#{ssxbmc},
+			</if>
+			<if test="ssjys != null and ssjys != ''">
+				ssjys=#{ssjys},
+			</if>
+			<if test="ssjysmc != null and ssjysmc != ''">
+				ssjysmc=#{ssjysmc},
+			</if>
+			<if test="remark != null and remark != ''">
+				remark=#{remark},
+			</if>
+			<if test="create_time != null and create_time != ''">
+				create_time=#{create_time},
+			</if>
+			<if test="update_time != null and update_time != ''">
+				update_time=#{update_time},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Zypyjhzb">
+		insert into mitu_zypyjhzb(
+			sszy,
+			ksnj,
+			jhlx,
+			zyfx,
+			zyfxmc,
+			khfs,
+			xqzxs,
+			jkxs,
+			syxs,
+			sjxs,
+			zxs,
+			zs,
+			kcxf,
+			ssxy,
+			ssxb,
+			ssxbmc,
+			ssjys,
+			ssjysmc,
+			remark,
+			create_time,
+			update_time)
+		values(
+			#{sszy},
+			#{ksnj},
+			#{jhlx},
+			#{zyfx},
+			#{zyfxmc},
+			#{khfs},
+			#{xqzxs},
+			#{jkxs},
+			#{syxs},
+			#{sjxs},
+			#{zxs},
+			#{zs},
+			#{kcxf},
+			#{ssxy},
+			#{ssxb},
+			#{ssxbmc},
+			#{ssjys},
+			#{ssjysmc},
+			#{remark},
+			#{create_time},
+			#{update_time}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_zypyjhzb where id in
+		<foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>

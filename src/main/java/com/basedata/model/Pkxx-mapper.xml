@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pkxx">
+	<select id="getTeachers" parameterType="java.util.HashMap"
+		resultType="Pkxx">
+		select skjs,skjsxm from mitu_pkxx where skjs != '' group by
+		skjs
+	</select>
+
+	<select id="getSpaces" parameterType="java.util.HashMap"
+		resultType="Pkxx">
+		select skcddm,skcdmc from mitu_pkxx where skcddm != ''
+		group by skcddm
+	</select>
+
+	<select id="getPkxx" parameterType="java.util.HashMap"
+		resultType="Pkxx">
+		select * from mitu_pkxx
+		<trim prefix="where" prefixOverrides="and|or">
+			<if test="skjs != null and skjs != ''">
+				and skjs ='${skjs}'
+			</if>
+			<if test="skcddm != null and skcddm != ''">
+				and skcddm ='${skcddm}'
+			</if>
+		</trim>
+	</select>
+
+	<select id="getByJxrwId" parameterType="String" resultType="Pkxx">
+		select *
+		from mitu_pkxx
+		<where>
+			<if test="_parameter != null and _parameter != ''">
+				jxrwid = #{0}
+			</if>
+		</where>
+	</select>
+</mapper>

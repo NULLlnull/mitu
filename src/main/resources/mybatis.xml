@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.basedata.model.Bjxx" alias="Bjxx" />
+		<typeAlias type="com.basedata.model.Jssysxx" alias="Jssysxx" />
+		<typeAlias type="com.basedata.model.Jxrw" alias="Jxrw" />
+		<typeAlias type="com.basedata.model.Jxrwxkxxbjlb" alias="Jxrwxkxxbjlb" />
+		<typeAlias type="com.basedata.model.Jysxx" alias="Jysxx" />
+		<typeAlias type="com.basedata.model.Jzlxx" alias="Jzlxx" />
+		<typeAlias type="com.basedata.model.Menu" alias="Menu" />
+		<typeAlias type="com.basedata.model.Pkxx" alias="Pkxx" />
+		<typeAlias type="com.basedata.model.Privilege" alias="Privilege" />
+		<typeAlias type="com.basedata.model.Role" alias="Role" />
+		<typeAlias type="com.basedata.model.Ryjcxx" alias="Ryjcxx" />
+		<typeAlias type="com.basedata.model.RyjcxxAudit" alias="RyjcxxAudit" />
+		<typeAlias type="com.basedata.model.User" alias="User" />
+		<typeAlias type="com.basedata.model.Xnxqsz" alias="Xnxqsz" />
+		<typeAlias type="com.basedata.model.Xsxx" alias="Xsxx" />
+		<typeAlias type="com.basedata.model.Xyjgxx" alias="Xyjgxx" />
+		<typeAlias type="com.basedata.model.Xyxx" alias="Xyxx" />
+		<typeAlias type="com.basedata.model.Zddm" alias="Zddm" />
+		<typeAlias type="com.basedata.model.Zdlb" alias="Zdlb" />
+		<typeAlias type="com.basedata.model.Zyxx" alias="Zyxx" />
+		<typeAlias type="com.basedata.model.Kcxx" alias="Kcxx" />
+		<typeAlias type="com.basedata.model.Zypyjh" alias="Zypyjh" />
+		<typeAlias type="com.basedata.model.Zypyjhzb" alias="Zypyjhzb" />
+		<typeAlias type="com.basedata.model.Zyksnj" alias="Zyksnj" />
+	</typeAliases>
+</configuration>

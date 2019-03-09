@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zyksnj">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Zyksnj">
+		select * from mitu_zyksnj
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					name like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Zyksnj">
+		select *
+		from mitu_zyksnj where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Zyksnj">
+		update mitu_zyksnj
+		<set>
+			<if test="sszy != null and sszy != ''">
+				sszy=#{sszy},
+			</if>
+			<if test="ksnj != null and ksnj != ''">
+				ksnj=#{ksnj},
+			</if>
+			<if test="remark != null and remark != ''">
+				remark=#{remark},
+			</if>
+			<if test="create_time != null and create_time != ''">
+				create_time=#{create_time},
+			</if>
+			<if test="update_time != null and update_time != ''">
+				update_time=#{update_time},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Zyksnj">
+		insert into mitu_zyksnj(
+			sszy,
+			ksnj,
+			remark,
+			create_time,
+			update_time)
+		values(
+			#{sszy},
+			#{ksnj},
+			#{remark},
+			#{create_time},
+			#{update_time}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_zyksnj where id in
+		<foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>

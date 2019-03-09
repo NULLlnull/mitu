@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zyxx">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Zyxx">
+		select * from mitu_zyxx
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					ynzydm like CONCAT('%',#{params.condition},'%')
+					or
+					zszydm like CONCAT('%',#{params.condition},'%')
+					or
+					ynzymc like CONCAT('%',#{params.condition},'%')
+					or
+					zszymc like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Zyxx">
+		select *
+		from mitu_zyxx where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Zyxx">
+		update mitu_zyxx
+		<set>
+			<if test="ynzydm != null and ynzydm != ''">
+				ynzydm=#{ynzydm},
+			</if>
+			<if test="zszydm != null and zszydm != ''">
+				zszydm=#{zszydm},
+			</if>
+			<if test="ynzymc != null and ynzymc != ''">
+				ynzymc=#{ynzymc},
+			</if>
+			<if test="zszymc != null and zszymc != ''">
+				zszymc=#{zszymc},
+			</if>
+			<if test="ssxb != null and ssxb != ''">
+				ssxb=#{ssxb},
+			</if>
+			<if test="ssxy != null and ssxy != ''">
+				ssxy=#{ssxy},
+			</if>
+			<if test="pydxDm != null and pydxDm != ''">
+				pydxDm=#{pydxDm},
+			</if>
+			<if test="pyccDm != null and pyccDm != ''">
+				pyccDm=#{pyccDm},
+			</if>
+			<if test="xz != null and xz != ''">
+				xz=#{xz},
+			</if>
+			<if test="remark != null and remark != ''">
+				remark=#{remark},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Zyxx">
+		insert into mitu_zyxx(
+			ynzydm,
+			zszydm,
+			ynzymc,
+			zszymc,
+			ssxb,
+			ssxy,
+			pydxDm,
+			pyccDm,
+			xz,
+			remark)
+		values(
+			#{ynzydm},
+			#{zszydm},
+			#{ynzymc},
+			#{zszymc},
+			#{ssxb},
+			#{ssxy},
+			#{pydxDm},
+			#{pyccDm},
+			#{xz},
+			#{remark}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_zyxx where id in
+		<foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>

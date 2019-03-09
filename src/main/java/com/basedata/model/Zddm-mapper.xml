@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zddm">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Zddm">
+		select * from mitu_zddm
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					name like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Zddm">
+		select *
+		from mitu_zddm where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Zddm">
+		update mitu_zddm
+		<set>
+			<if test="sszdlb != null and sszdlb != ''">
+				sszdlb=#{sszdlb},
+			</if>
+			<if test="dmbh != null and dmbh != ''">
+				dmbh=#{dmbh},
+			</if>
+			<if test="dmmc != null and dmmc != ''">
+				dmmc=#{dmmc},
+			</if>
+			<if test="sort != null and sort != ''">
+				sort=#{sort},
+			</if>
+			<if test="pykssy != null and pykssy != ''">
+				pykssy=#{pykssy},
+			</if>
+			<if test="xsbz != null and xsbz != ''">
+				xsbz=#{xsbz},
+			</if>
+			<if test="fqbz != null and fqbz != ''">
+				fqbz=#{fqbz},
+			</if>
+			<if test="remark != null and remark != ''">
+				remark=#{remark},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Zddm">
+		insert into mitu_zddm(
+			sszdlb,
+			dmbh,
+			dmmc,
+			sort,
+			pykssy,
+			xsbz,
+			fqbz,
+			remark)
+		values(
+			#{sszdlb},
+			#{dmbh},
+			#{dmmc},
+			#{sort},
+			#{pykssy},
+			#{xsbz},
+			#{fqbz},
+			#{remark}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_zddm where id in
+		<foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+
+
+	<select id="queryByZdlb" parameterType="String" resultType="Zddm">
+		select *
+		from mitu_zddm where sszdlb=#{zdlb} and xsbz = 1 and fqbz = 0 order by sort
+	</select>
+</mapper>

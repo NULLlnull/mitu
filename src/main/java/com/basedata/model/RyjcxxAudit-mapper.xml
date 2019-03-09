@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ryjcxxaudit">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="RyjcxxAudit">
+		select * from mitu_ryjcxx_audit
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and teacherId = #{params.condition}
+				</if>
+			</if>
+		</where>
+		order by audit_time asc
+	</select>
+
+	<insert id="save" parameterType="RyjcxxAudit">
+		insert into mitu_ryjcxx_audit(
+		teacherId,
+		audit_status,
+		auditor,
+		audit_opinion,
+		audit_time
+		)
+		values(
+		#{teacherId},
+		#{audit_status},
+		#{auditor},
+		#{audit_opinion},
+		#{audit_time}
+		)
+	</insert>
+</mapper>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jssysxx">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Jssysxx">
+		select * from mitu_jssysxx
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					name like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Jssysxx">
+		select *
+		from mitu_jssysxx where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Jssysxx">
+		update mitu_jssysxx
+		<set>
+			<if test="lb != null and lb != ''">
+				lb=#{lb},
+			</if>
+			<if test="lx != null and lx != ''">
+				lx=#{lx},
+			</if>
+			<if test="jssysdm != null and jssysdm != ''">
+				jssysdm=#{jssysdm},
+			</if>
+			<if test="jssysmc != null and jssysmc != ''">
+				jssysmc=#{jssysmc},
+			</if>
+			<if test="jssysjc != null and jssysjc != ''">
+				jssysjc=#{jssysjc},
+			</if>
+			<if test="ssxy != null and ssxy != ''">
+				ssxy=#{ssxy},
+			</if>
+			<if test="ssxq != null and ssxq != ''">
+				ssxq=#{ssxq},
+			</if>
+			<if test="ssxqmc != null and ssxqmc != ''">
+				ssxqmc=#{ssxqmc},
+			</if>
+			<if test="ssjzl != null and ssjzl != ''">
+				ssjzl=#{ssjzl},
+			</if>
+			<if test="ssjzlmc != null and ssjzlmc != ''">
+				ssjzlmc=#{ssjzlmc},
+			</if>
+			<if test="ch != null and ch != ''">
+				ch=#{ch},
+			</if>
+			<if test="mph != null and mph != ''">
+				mph=#{mph},
+			</if>
+			<if test="xsrl != null and xsrl != ''">
+				xsrl=#{xsrl},
+			</if>
+			<if test="bjrl != null and bjrl != ''">
+				bjrl=#{bjrl},
+			</if>
+			<if test="sfydmtsb != null and sfydmtsb != ''">
+				sfydmtsb=#{sfydmtsb},
+			</if>
+			<if test="sfytyysb != null and sfytyysb != ''">
+				sfytyysb=#{sfytyysb},
+			</if>
+			<if test="sfyktsb != null and sfyktsb != ''">
+				sfyktsb=#{sfyktsb},
+			</if>
+			<if test="sfylzsb != null and sfylzsb != ''">
+				sfylzsb=#{sfylzsb},
+			</if>
+			<if test="sfyycspsb != null and sfyycspsb != ''">
+				sfyycspsb=#{sfyycspsb},
+			</if>
+			<if test="gxjgdm != null and gxjgdm != ''">
+				gxjgdm=#{gxjgdm},
+			</if>
+			<if test="gxjgmc != null and gxjgmc != ''">
+				gxjgmc=#{gxjgmc},
+			</if>
+			<if test="oprybh != null and oprybh != ''">
+				oprybh=#{oprybh},
+			</if>
+			<if test="kfzxbz != null and kfzxbz != ''">
+				kfzxbz=#{kfzxbz},
+			</if>
+			<if test="cdglygh != null and cdglygh != ''">
+				cdglygh=#{cdglygh},
+			</if>
+			<if test="cdglyxm != null and cdglyxm != ''">
+				cdglyxm=#{cdglyxm},
+			</if>
+			<if test="fbbjdm != null and fbbjdm != ''">
+				fbbjdm=#{fbbjdm},
+			</if>
+			<if test="fbbjmc != null and fbbjmc != ''">
+				fbbjmc=#{fbbjmc},
+			</if>
+			<if test="tybz != null and tybz != ''">
+				tybz=#{tybz},
+			</if>
+			<if test="cdxsgly != null and cdxsgly != ''">
+				cdxsgly=#{cdxsgly},
+			</if>
+			<if test="cdxsglyxm != null and cdxsglyxm != ''">
+				cdxsglyxm=#{cdxsglyxm},
+			</if>
+			<if test="remark != null and remark != ''">
+				remark=#{remark},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Jssysxx">
+		insert into mitu_jssysxx(
+			lb,
+			lx,
+			jssysdm,
+			jssysmc,
+			jssysjc,
+			ssxy,
+			ssxq,
+			ssxqmc,
+			ssjzl,
+			ssjzlmc,
+			ch,
+			mph,
+			xsrl,
+			bjrl,
+			sfydmtsb,
+			sfytyysb,
+			sfyktsb,
+			sfylzsb,
+			sfyycspsb,
+			gxjgdm,
+			gxjgmc,
+			oprybh,
+			kfzxbz,
+			cdglygh,
+			cdglyxm,
+			fbbjdm,
+			fbbjmc,
+			tybz,
+			cdxsgly,
+			cdxsglyxm,
+			remark)
+		values(
+			#{lb},
+			#{lx},
+			#{jssysdm},
+			#{jssysmc},
+			#{jssysjc},
+			#{ssxy},
+			#{ssxq},
+			#{ssxqmc},
+			#{ssjzl},
+			#{ssjzlmc},
+			#{ch},
+			#{mph},
+			#{xsrl},
+			#{bjrl},
+			#{sfydmtsb},
+			#{sfytyysb},
+			#{sfyktsb},
+			#{sfylzsb},
+			#{sfyycspsb},
+			#{gxjgdm},
+			#{gxjgmc},
+			#{oprybh},
+			#{kfzxbz},
+			#{cdglygh},
+			#{cdglyxm},
+			#{fbbjdm},
+			#{fbbjmc},
+			#{tybz},
+			#{cdxsgly},
+			#{cdxsglyxm},
+			#{remark}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_jssysxx where id in
+		<foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>

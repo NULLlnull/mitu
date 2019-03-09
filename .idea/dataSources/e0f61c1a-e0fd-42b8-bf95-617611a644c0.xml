@@ -1,0 +1,4746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mitu@10.196.8.132">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.8">
+    <root id="1">
+      <ServerVersion>8.0.15</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="ajax_user">
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </schema>
+    <schema id="3" parent="1" name="information_schema">
+      <Collation>utf8_general_ci</Collation>
+    </schema>
+    <schema id="4" parent="1" name="mitu">
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </schema>
+    <schema id="5" parent="1" name="more_table">
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </schema>
+    <schema id="6" parent="1" name="mybatis_book">
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </schema>
+    <schema id="7" parent="1" name="mysql">
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </schema>
+    <schema id="8" parent="1" name="performance_schema">
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </schema>
+    <schema id="9" parent="1" name="project_test">
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </schema>
+    <schema id="10" parent="1" name="sys">
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </schema>
+    <schema id="11" parent="1" name="webtest">
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </schema>
+    <schema id="12" parent="1" name="yebaba">
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </schema>
+    <collation id="13" parent="1" name="armscii8_bin">
+      <Charset>armscii8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="14" parent="1" name="armscii8_general_ci">
+      <Charset>armscii8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="15" parent="1" name="ascii_bin">
+      <Charset>ascii</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="16" parent="1" name="ascii_general_ci">
+      <Charset>ascii</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="17" parent="1" name="big5_bin">
+      <Charset>big5</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="18" parent="1" name="big5_chinese_ci">
+      <Charset>big5</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="19" parent="1" name="binary">
+      <Charset>binary</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="20" parent="1" name="cp1250_bin">
+      <Charset>cp1250</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="21" parent="1" name="cp1250_croatian_ci">
+      <Charset>cp1250</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="22" parent="1" name="cp1250_czech_cs">
+      <Charset>cp1250</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="23" parent="1" name="cp1250_general_ci">
+      <Charset>cp1250</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="24" parent="1" name="cp1250_polish_ci">
+      <Charset>cp1250</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="25" parent="1" name="cp1251_bin">
+      <Charset>cp1251</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="26" parent="1" name="cp1251_bulgarian_ci">
+      <Charset>cp1251</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="27" parent="1" name="cp1251_general_ci">
+      <Charset>cp1251</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="28" parent="1" name="cp1251_general_cs">
+      <Charset>cp1251</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="29" parent="1" name="cp1251_ukrainian_ci">
+      <Charset>cp1251</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="30" parent="1" name="cp1256_bin">
+      <Charset>cp1256</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="31" parent="1" name="cp1256_general_ci">
+      <Charset>cp1256</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="32" parent="1" name="cp1257_bin">
+      <Charset>cp1257</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="33" parent="1" name="cp1257_general_ci">
+      <Charset>cp1257</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="34" parent="1" name="cp1257_lithuanian_ci">
+      <Charset>cp1257</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="35" parent="1" name="cp850_bin">
+      <Charset>cp850</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="36" parent="1" name="cp850_general_ci">
+      <Charset>cp850</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="37" parent="1" name="cp852_bin">
+      <Charset>cp852</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="38" parent="1" name="cp852_general_ci">
+      <Charset>cp852</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="39" parent="1" name="cp866_bin">
+      <Charset>cp866</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="40" parent="1" name="cp866_general_ci">
+      <Charset>cp866</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="41" parent="1" name="cp932_bin">
+      <Charset>cp932</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="42" parent="1" name="cp932_japanese_ci">
+      <Charset>cp932</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="43" parent="1" name="dec8_bin">
+      <Charset>dec8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="44" parent="1" name="dec8_swedish_ci">
+      <Charset>dec8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="45" parent="1" name="eucjpms_bin">
+      <Charset>eucjpms</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="46" parent="1" name="eucjpms_japanese_ci">
+      <Charset>eucjpms</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="47" parent="1" name="euckr_bin">
+      <Charset>euckr</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="48" parent="1" name="euckr_korean_ci">
+      <Charset>euckr</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="49" parent="1" name="gb18030_bin">
+      <Charset>gb18030</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="50" parent="1" name="gb18030_chinese_ci">
+      <Charset>gb18030</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="51" parent="1" name="gb18030_unicode_520_ci">
+      <Charset>gb18030</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="52" parent="1" name="gb2312_bin">
+      <Charset>gb2312</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="53" parent="1" name="gb2312_chinese_ci">
+      <Charset>gb2312</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="54" parent="1" name="gbk_bin">
+      <Charset>gbk</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="55" parent="1" name="gbk_chinese_ci">
+      <Charset>gbk</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="56" parent="1" name="geostd8_bin">
+      <Charset>geostd8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="57" parent="1" name="geostd8_general_ci">
+      <Charset>geostd8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="58" parent="1" name="greek_bin">
+      <Charset>greek</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="59" parent="1" name="greek_general_ci">
+      <Charset>greek</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="60" parent="1" name="hebrew_bin">
+      <Charset>hebrew</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="61" parent="1" name="hebrew_general_ci">
+      <Charset>hebrew</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="62" parent="1" name="hp8_bin">
+      <Charset>hp8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="63" parent="1" name="hp8_english_ci">
+      <Charset>hp8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="64" parent="1" name="keybcs2_bin">
+      <Charset>keybcs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="65" parent="1" name="keybcs2_general_ci">
+      <Charset>keybcs2</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="66" parent="1" name="koi8r_bin">
+      <Charset>koi8r</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="67" parent="1" name="koi8r_general_ci">
+      <Charset>koi8r</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="68" parent="1" name="koi8u_bin">
+      <Charset>koi8u</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="69" parent="1" name="koi8u_general_ci">
+      <Charset>koi8u</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="70" parent="1" name="latin1_bin">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="71" parent="1" name="latin1_danish_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="72" parent="1" name="latin1_general_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="73" parent="1" name="latin1_general_cs">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="74" parent="1" name="latin1_german1_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="75" parent="1" name="latin1_german2_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="76" parent="1" name="latin1_spanish_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="77" parent="1" name="latin1_swedish_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="78" parent="1" name="latin2_bin">
+      <Charset>latin2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="79" parent="1" name="latin2_croatian_ci">
+      <Charset>latin2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="80" parent="1" name="latin2_czech_cs">
+      <Charset>latin2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="81" parent="1" name="latin2_general_ci">
+      <Charset>latin2</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="82" parent="1" name="latin2_hungarian_ci">
+      <Charset>latin2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="83" parent="1" name="latin5_bin">
+      <Charset>latin5</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="84" parent="1" name="latin5_turkish_ci">
+      <Charset>latin5</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="85" parent="1" name="latin7_bin">
+      <Charset>latin7</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="86" parent="1" name="latin7_estonian_cs">
+      <Charset>latin7</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="87" parent="1" name="latin7_general_ci">
+      <Charset>latin7</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="88" parent="1" name="latin7_general_cs">
+      <Charset>latin7</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="89" parent="1" name="macce_bin">
+      <Charset>macce</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="90" parent="1" name="macce_general_ci">
+      <Charset>macce</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="91" parent="1" name="macroman_bin">
+      <Charset>macroman</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="92" parent="1" name="macroman_general_ci">
+      <Charset>macroman</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="93" parent="1" name="sjis_bin">
+      <Charset>sjis</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="94" parent="1" name="sjis_japanese_ci">
+      <Charset>sjis</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="95" parent="1" name="swe7_bin">
+      <Charset>swe7</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="96" parent="1" name="swe7_swedish_ci">
+      <Charset>swe7</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="97" parent="1" name="tis620_bin">
+      <Charset>tis620</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="98" parent="1" name="tis620_thai_ci">
+      <Charset>tis620</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="99" parent="1" name="ucs2_bin">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="100" parent="1" name="ucs2_croatian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="101" parent="1" name="ucs2_czech_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="102" parent="1" name="ucs2_danish_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="103" parent="1" name="ucs2_esperanto_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="104" parent="1" name="ucs2_estonian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="105" parent="1" name="ucs2_general_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="106" parent="1" name="ucs2_general_mysql500_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="107" parent="1" name="ucs2_german2_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="108" parent="1" name="ucs2_hungarian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="109" parent="1" name="ucs2_icelandic_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="110" parent="1" name="ucs2_latvian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="111" parent="1" name="ucs2_lithuanian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="112" parent="1" name="ucs2_persian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="113" parent="1" name="ucs2_polish_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="114" parent="1" name="ucs2_roman_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="115" parent="1" name="ucs2_romanian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="116" parent="1" name="ucs2_sinhala_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="117" parent="1" name="ucs2_slovak_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="118" parent="1" name="ucs2_slovenian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="119" parent="1" name="ucs2_spanish2_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="120" parent="1" name="ucs2_spanish_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="121" parent="1" name="ucs2_swedish_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="122" parent="1" name="ucs2_turkish_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="123" parent="1" name="ucs2_unicode_520_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="124" parent="1" name="ucs2_unicode_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="125" parent="1" name="ucs2_vietnamese_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="126" parent="1" name="ujis_bin">
+      <Charset>ujis</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="127" parent="1" name="ujis_japanese_ci">
+      <Charset>ujis</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="128" parent="1" name="utf16_bin">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="129" parent="1" name="utf16_croatian_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="130" parent="1" name="utf16_czech_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="131" parent="1" name="utf16_danish_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="132" parent="1" name="utf16_esperanto_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="133" parent="1" name="utf16_estonian_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="134" parent="1" name="utf16_general_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="135" parent="1" name="utf16_german2_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="136" parent="1" name="utf16_hungarian_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="137" parent="1" name="utf16_icelandic_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="138" parent="1" name="utf16_latvian_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="139" parent="1" name="utf16_lithuanian_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="140" parent="1" name="utf16_persian_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="141" parent="1" name="utf16_polish_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="142" parent="1" name="utf16_roman_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="143" parent="1" name="utf16_romanian_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="144" parent="1" name="utf16_sinhala_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="145" parent="1" name="utf16_slovak_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="146" parent="1" name="utf16_slovenian_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="147" parent="1" name="utf16_spanish2_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="148" parent="1" name="utf16_spanish_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="149" parent="1" name="utf16_swedish_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="150" parent="1" name="utf16_turkish_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="151" parent="1" name="utf16_unicode_520_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="152" parent="1" name="utf16_unicode_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="153" parent="1" name="utf16_vietnamese_ci">
+      <Charset>utf16</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="154" parent="1" name="utf16le_bin">
+      <Charset>utf16le</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="155" parent="1" name="utf16le_general_ci">
+      <Charset>utf16le</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="156" parent="1" name="utf32_bin">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="157" parent="1" name="utf32_croatian_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="158" parent="1" name="utf32_czech_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="159" parent="1" name="utf32_danish_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="160" parent="1" name="utf32_esperanto_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="161" parent="1" name="utf32_estonian_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="162" parent="1" name="utf32_general_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="163" parent="1" name="utf32_german2_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="164" parent="1" name="utf32_hungarian_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="165" parent="1" name="utf32_icelandic_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="166" parent="1" name="utf32_latvian_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="167" parent="1" name="utf32_lithuanian_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="168" parent="1" name="utf32_persian_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="169" parent="1" name="utf32_polish_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="170" parent="1" name="utf32_roman_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="171" parent="1" name="utf32_romanian_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="172" parent="1" name="utf32_sinhala_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="173" parent="1" name="utf32_slovak_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="174" parent="1" name="utf32_slovenian_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="175" parent="1" name="utf32_spanish2_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="176" parent="1" name="utf32_spanish_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="177" parent="1" name="utf32_swedish_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="178" parent="1" name="utf32_turkish_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="179" parent="1" name="utf32_unicode_520_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="180" parent="1" name="utf32_unicode_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="181" parent="1" name="utf32_vietnamese_ci">
+      <Charset>utf32</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="182" parent="1" name="utf8_bin">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="183" parent="1" name="utf8_croatian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="184" parent="1" name="utf8_czech_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="185" parent="1" name="utf8_danish_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="186" parent="1" name="utf8_esperanto_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="187" parent="1" name="utf8_estonian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="188" parent="1" name="utf8_general_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="189" parent="1" name="utf8_general_mysql500_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="190" parent="1" name="utf8_german2_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="191" parent="1" name="utf8_hungarian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="192" parent="1" name="utf8_icelandic_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="193" parent="1" name="utf8_latvian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="194" parent="1" name="utf8_lithuanian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="195" parent="1" name="utf8_persian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="196" parent="1" name="utf8_polish_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="197" parent="1" name="utf8_roman_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="198" parent="1" name="utf8_romanian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="199" parent="1" name="utf8_sinhala_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="200" parent="1" name="utf8_slovak_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="201" parent="1" name="utf8_slovenian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="202" parent="1" name="utf8_spanish2_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="203" parent="1" name="utf8_spanish_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="204" parent="1" name="utf8_swedish_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="205" parent="1" name="utf8_tolower_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="206" parent="1" name="utf8_turkish_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="207" parent="1" name="utf8_unicode_520_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="208" parent="1" name="utf8_unicode_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="209" parent="1" name="utf8_vietnamese_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="210" parent="1" name="utf8mb4_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="211" parent="1" name="utf8mb4_0900_as_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="212" parent="1" name="utf8mb4_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="213" parent="1" name="utf8mb4_bin">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="214" parent="1" name="utf8mb4_croatian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="215" parent="1" name="utf8mb4_cs_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="216" parent="1" name="utf8mb4_cs_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="217" parent="1" name="utf8mb4_czech_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="218" parent="1" name="utf8mb4_da_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="219" parent="1" name="utf8mb4_da_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="220" parent="1" name="utf8mb4_danish_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="221" parent="1" name="utf8mb4_de_pb_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="222" parent="1" name="utf8mb4_de_pb_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="223" parent="1" name="utf8mb4_eo_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="224" parent="1" name="utf8mb4_eo_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="225" parent="1" name="utf8mb4_es_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="226" parent="1" name="utf8mb4_es_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="227" parent="1" name="utf8mb4_es_trad_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="228" parent="1" name="utf8mb4_es_trad_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="229" parent="1" name="utf8mb4_esperanto_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="230" parent="1" name="utf8mb4_estonian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="231" parent="1" name="utf8mb4_et_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="232" parent="1" name="utf8mb4_et_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="233" parent="1" name="utf8mb4_general_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="234" parent="1" name="utf8mb4_german2_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="235" parent="1" name="utf8mb4_hr_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="236" parent="1" name="utf8mb4_hr_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="237" parent="1" name="utf8mb4_hu_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="238" parent="1" name="utf8mb4_hu_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="239" parent="1" name="utf8mb4_hungarian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="240" parent="1" name="utf8mb4_icelandic_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="241" parent="1" name="utf8mb4_is_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="242" parent="1" name="utf8mb4_is_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="243" parent="1" name="utf8mb4_ja_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="244" parent="1" name="utf8mb4_ja_0900_as_cs_ks">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="245" parent="1" name="utf8mb4_la_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="246" parent="1" name="utf8mb4_la_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="247" parent="1" name="utf8mb4_latvian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="248" parent="1" name="utf8mb4_lithuanian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="249" parent="1" name="utf8mb4_lt_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="250" parent="1" name="utf8mb4_lt_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="251" parent="1" name="utf8mb4_lv_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="252" parent="1" name="utf8mb4_lv_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="253" parent="1" name="utf8mb4_persian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="254" parent="1" name="utf8mb4_pl_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="255" parent="1" name="utf8mb4_pl_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="256" parent="1" name="utf8mb4_polish_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="257" parent="1" name="utf8mb4_ro_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="258" parent="1" name="utf8mb4_ro_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="259" parent="1" name="utf8mb4_roman_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="260" parent="1" name="utf8mb4_romanian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="261" parent="1" name="utf8mb4_ru_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="262" parent="1" name="utf8mb4_ru_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="263" parent="1" name="utf8mb4_sinhala_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="264" parent="1" name="utf8mb4_sk_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="265" parent="1" name="utf8mb4_sk_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="266" parent="1" name="utf8mb4_sl_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="267" parent="1" name="utf8mb4_sl_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="268" parent="1" name="utf8mb4_slovak_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="269" parent="1" name="utf8mb4_slovenian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="270" parent="1" name="utf8mb4_spanish2_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="271" parent="1" name="utf8mb4_spanish_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="272" parent="1" name="utf8mb4_sv_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="273" parent="1" name="utf8mb4_sv_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="274" parent="1" name="utf8mb4_swedish_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="275" parent="1" name="utf8mb4_tr_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="276" parent="1" name="utf8mb4_tr_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="277" parent="1" name="utf8mb4_turkish_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="278" parent="1" name="utf8mb4_unicode_520_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="279" parent="1" name="utf8mb4_unicode_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="280" parent="1" name="utf8mb4_vi_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="281" parent="1" name="utf8mb4_vi_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="282" parent="1" name="utf8mb4_vietnamese_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <table id="283" parent="4" name="mitu_bjxx">
+      <Comment>班级信息表</Comment>
+      <Engine>MyISAM</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="284" parent="4" name="mitu_jssysxx">
+      <Comment>教室实验室信息</Comment>
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="285" parent="4" name="mitu_jxrw">
+      <Comment>教学任务信息表</Comment>
+      <Engine>MyISAM</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="286" parent="4" name="mitu_jxrwxkxxbjlb">
+      <Comment>选课信息开设班级列表</Comment>
+      <Engine>MyISAM</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="287" parent="4" name="mitu_jysxx">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="288" parent="4" name="mitu_jzlxx">
+      <Comment>建筑楼信息</Comment>
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="289" parent="4" name="mitu_kcxx">
+      <Comment>课程信息表</Comment>
+      <Engine>MyISAM</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="290" parent="4" name="mitu_menu">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="291" parent="4" name="mitu_pkxx">
+      <Comment>排课信息表</Comment>
+      <Engine>MyISAM</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="292" parent="4" name="mitu_privilege">
+      <Engine>MyISAM</Engine>
+      <Collation>latin1_swedish_ci</Collation>
+    </table>
+    <table id="293" parent="4" name="mitu_role">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="294" parent="4" name="mitu_ryjcxx">
+      <Comment>人员基础信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="295" parent="4" name="mitu_ryjcxx_audit">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="296" parent="4" name="mitu_user">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="297" parent="4" name="mitu_xnxqsz">
+      <Comment>学年学期设置</Comment>
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="298" parent="4" name="mitu_xsxx">
+      <Comment>学生信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="299" parent="4" name="mitu_xyjgxx">
+      <Comment>学院机构信息</Comment>
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="300" parent="4" name="mitu_xyxx">
+      <Comment>学院信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="301" parent="4" name="mitu_zddm">
+      <Comment>字典代码表</Comment>
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="302" parent="4" name="mitu_zdlb">
+      <Comment>字典类别表</Comment>
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="303" parent="4" name="mitu_zyksnj">
+      <Comment>专业开设年级</Comment>
+      <Engine>MyISAM</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="304" parent="4" name="mitu_zypyjh">
+      <Comment>专业培养计划表</Comment>
+      <Engine>MyISAM</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="305" parent="4" name="mitu_zypyjhzb">
+      <Comment>专业培养计划表</Comment>
+      <Engine>MyISAM</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="306" parent="4" name="mitu_zyxx">
+      <Comment>专业信息表</Comment>
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <column id="307" parent="283" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="308" parent="283" name="ssxy">
+      <Position>2</Position>
+      <Comment>所属学院</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="309" parent="283" name="ssxq">
+      <Position>3</Position>
+      <Comment>所属校区</Comment>
+      <DataType>varchar(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="310" parent="283" name="ssxqmc">
+      <Position>4</Position>
+      <Comment>所属校区名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="311" parent="283" name="ssxb">
+      <Position>5</Position>
+      <Comment>所属系部</Comment>
+      <DataType>varchar(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="312" parent="283" name="ssxbmc">
+      <Position>6</Position>
+      <Comment>所属系部名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="313" parent="283" name="sszy">
+      <Position>7</Position>
+      <Comment>所属专业</Comment>
+      <DataType>varchar(7)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="314" parent="283" name="sszymc">
+      <Position>8</Position>
+      <Comment>所属专业名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="315" parent="283" name="pydx">
+      <Position>9</Position>
+      <Comment>培养对象</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="316" parent="283" name="pydxmc">
+      <Position>10</Position>
+      <Comment>培养对象名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="317" parent="283" name="pycc">
+      <Position>11</Position>
+      <Comment>培养层次代码</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="318" parent="283" name="pyccmc">
+      <Position>12</Position>
+      <Comment>培养层次名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="319" parent="283" name="zyfx">
+      <Position>13</Position>
+      <Comment>专业方向</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="320" parent="283" name="zyfxmc">
+      <Position>14</Position>
+      <Comment>专业方向名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="321" parent="283" name="bjdm">
+      <Position>15</Position>
+      <Comment>自编班级代码专业7年份4代码2</Comment>
+      <DataType>varchar(13)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="322" parent="283" name="bjmc">
+      <Position>16</Position>
+      <Comment>班级名称</Comment>
+      <DataType>char(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="323" parent="283" name="bjjc">
+      <Position>17</Position>
+      <Comment>班级简称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="324" parent="283" name="nj">
+      <Position>18</Position>
+      <Comment>年级</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="325" parent="283" name="xz">
+      <Position>19</Position>
+      <Comment>学制</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="326" parent="283" name="xzshow">
+      <Position>20</Position>
+      <DataType>varchar(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="327" parent="283" name="jlsj">
+      <Position>21</Position>
+      <Comment>建立时间</Comment>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="328" parent="283" name="byjb">
+      <Position>22</Position>
+      <Comment>毕业届别</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="329" parent="283" name="bjzxrs">
+      <Position>23</Position>
+      <Comment>班级在校人数</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="330" parent="283" name="bjzxrs_m">
+      <Position>24</Position>
+      <Comment>班级在校人数_男</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="331" parent="283" name="bjzxrs_f">
+      <Position>25</Position>
+      <Comment>班级在校人数_女</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="332" parent="283" name="bjsjzxrs">
+      <Position>26</Position>
+      <Comment>班级实际在校人数</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="333" parent="283" name="bjsjzxrs_m">
+      <Position>27</Position>
+      <Comment>班级实际在校人数_男</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="334" parent="283" name="bjsjzxrs_f">
+      <Position>28</Position>
+      <Comment>班级实际在校人数_女</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="335" parent="283" name="remark">
+      <Position>29</Position>
+      <DataType>varchar(250)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="336" parent="283" name="create_time">
+      <Position>30</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="337" parent="283" name="update_time">
+      <Position>31</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="338" parent="283" name="deltag">
+      <Position>32</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="339" parent="283" name="tybz">
+      <Position>33</Position>
+      <Comment>停用标志</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="340" parent="283" name="fdy">
+      <Position>34</Position>
+      <Comment>辅导员</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="341" parent="283" name="fdyxm">
+      <Position>35</Position>
+      <Comment>辅导员姓名</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="342" parent="283" name="xw">
+      <Position>36</Position>
+      <Comment>学委</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="343" parent="283" name="xwxm">
+      <Position>37</Position>
+      <Comment>学委姓名</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="344" parent="283" name="xwfzkqkf">
+      <Position>38</Position>
+      <Comment>学委辅助考勤开放</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="345" parent="283" name="bjdm">
+      <ColNames>bjdm</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="346" parent="283" name="fdy">
+      <ColNames>fdy</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="347" parent="283" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="348" parent="283" name="updatebjmc">
+      <Turn>after-row</Turn>
+      <Events>U</Events>
+    </trigger>
+    <column id="349" parent="284" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="350" parent="284" name="lb">
+      <Position>2</Position>
+      <Comment>类别(1校内2校外)</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="351" parent="284" name="lx">
+      <Position>3</Position>
+      <Comment>教室实验室类型</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="352" parent="284" name="jssysdm">
+      <Position>4</Position>
+      <Comment>类别1位+自编教室实验室代码(建筑楼代码7位+4位顺序号)</Comment>
+      <DataType>varchar(12)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="353" parent="284" name="jssysmc">
+      <Position>5</Position>
+      <Comment>名称</Comment>
+      <DataType>char(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="354" parent="284" name="jssysjc">
+      <Position>6</Position>
+      <Comment>简称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="355" parent="284" name="ssxy">
+      <Position>7</Position>
+      <Comment>所属学院</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="356" parent="284" name="ssxq">
+      <Position>8</Position>
+      <Comment>所属校区</Comment>
+      <DataType>varchar(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="357" parent="284" name="ssxqmc">
+      <Position>9</Position>
+      <Comment>所属校区名称</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="358" parent="284" name="ssjzl">
+      <Position>10</Position>
+      <Comment>所属建筑楼</Comment>
+      <DataType>varchar(7)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="359" parent="284" name="ssjzlmc">
+      <Position>11</Position>
+      <Comment>所属建筑楼名称</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="360" parent="284" name="ch">
+      <Position>12</Position>
+      <Comment>层号</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="361" parent="284" name="mph">
+      <Position>13</Position>
+      <Comment>门牌号 </Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="362" parent="284" name="xsrl">
+      <Position>14</Position>
+      <Comment>学生容量</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="363" parent="284" name="bjrl">
+      <Position>15</Position>
+      <Comment>班级容量</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="364" parent="284" name="sfydmtsb">
+      <Position>16</Position>
+      <Comment>是否有多媒体设备(电脑)</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="365" parent="284" name="sfytyysb">
+      <Position>17</Position>
+      <Comment>是否有投影设备</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="366" parent="284" name="sfyktsb">
+      <Position>18</Position>
+      <Comment>是否有空调设备</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="367" parent="284" name="sfylzsb">
+      <Position>19</Position>
+      <Comment>是否有录制设备</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="368" parent="284" name="sfyycspsb">
+      <Position>20</Position>
+      <Comment>是否有远程视频设备</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="369" parent="284" name="gxjgdm">
+      <Position>21</Position>
+      <Comment>管辖机构(多机构,分割)</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="370" parent="284" name="gxjgmc">
+      <Position>22</Position>
+      <Comment>管辖机构(多机构,分割)</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="371" parent="284" name="oprybh">
+      <Position>23</Position>
+      <Comment>操作人员</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="372" parent="284" name="kfzxbz">
+      <Position>24</Position>
+      <Comment>开放自选标志</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="373" parent="284" name="cdglygh">
+      <Position>25</Position>
+      <Comment>场地管理员工号</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="374" parent="284" name="cdglyxm">
+      <Position>26</Position>
+      <Comment>场地管理员姓名</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="375" parent="284" name="fbbjdm">
+      <Position>27</Position>
+      <Comment>分配班级代码</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="376" parent="284" name="fbbjmc">
+      <Position>28</Position>
+      <Comment>分配班级名称</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="377" parent="284" name="tybz">
+      <Position>29</Position>
+      <Comment>停用标志</Comment>
+      <DataType>tinyint(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="378" parent="284" name="cdxsgly">
+      <Position>30</Position>
+      <Comment>场地学生管理员</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="379" parent="284" name="cdxsglyxm">
+      <Position>31</Position>
+      <Comment>场地学生管理员</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="380" parent="284" name="remark">
+      <Position>32</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="381" parent="284" name="deltag">
+      <Position>33</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="382" parent="284" name="create_time">
+      <Position>34</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="383" parent="284" name="update_time">
+      <Position>35</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="384" parent="284" name="jssysdm">
+      <ColNames>jssysdm</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="385" parent="284" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="386" parent="284" name="jssysdm">
+      <ColNames>jssysdm</ColNames>
+      <UnderlyingIndexName>jssysdm</UnderlyingIndexName>
+    </key>
+    <column id="387" parent="285" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="388" parent="285" name="ssjh">
+      <Position>2</Position>
+      <Comment>所属计划</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="389" parent="285" name="ssxk">
+      <Position>3</Position>
+      <Comment>所属选课</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="390" parent="285" name="sshb">
+      <Position>4</Position>
+      <Comment>所属合班</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="391" parent="285" name="xn">
+      <Position>5</Position>
+      <Comment>学年</Comment>
+      <DataType>varchar(9)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="392" parent="285" name="xq">
+      <Position>6</Position>
+      <Comment>学期</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="393" parent="285" name="rwlx">
+      <Position>7</Position>
+      <Comment>任务类型(理论/实践)</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="394" parent="285" name="kcdm">
+      <Position>8</Position>
+      <Comment>课程ID</Comment>
+      <DataType>varchar(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="395" parent="285" name="kcmc">
+      <Position>9</Position>
+      <Comment>课程名称</Comment>
+      <DataType>char(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="396" parent="285" name="kcxz">
+      <Position>10</Position>
+      <Comment>课程性质(必修01/限选02/任选03)</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="397" parent="285" name="zgkc">
+      <Position>11</Position>
+      <Comment>主干课程</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="398" parent="285" name="khfs">
+      <Position>12</Position>
+      <Comment>考核方式</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="399" parent="285" name="xqzxs">
+      <Position>13</Position>
+      <Comment>学期总学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="400" parent="285" name="jkxs">
+      <Position>14</Position>
+      <Comment>讲课学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="401" parent="285" name="syxs">
+      <Position>15</Position>
+      <Comment>实验学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="402" parent="285" name="sjxs">
+      <Position>16</Position>
+      <Comment>上机学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="403" parent="285" name="zxs">
+      <Position>17</Position>
+      <Comment>周学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="404" parent="285" name="zxspkxx">
+      <Position>18</Position>
+      <Comment>周学时排课信息</Comment>
+      <DataType>decimal(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="405" parent="285" name="zs">
+      <Position>19</Position>
+      <Comment>周数</Comment>
+      <DataType>tinyint(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="406" parent="285" name="zspkxx">
+      <Position>20</Position>
+      <Comment>周数排课信息</Comment>
+      <DataType>tinyint(2)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="407" parent="285" name="kcxf">
+      <Position>21</Position>
+      <Comment>课程学分</Comment>
+      <DataType>double|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="408" parent="285" name="ssxy">
+      <Position>22</Position>
+      <Comment>所属学院</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="409" parent="285" name="ssxb">
+      <Position>23</Position>
+      <Comment>所属系部</Comment>
+      <DataType>varchar(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="410" parent="285" name="ssxbmc">
+      <Position>24</Position>
+      <Comment>所属系部名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="411" parent="285" name="ssjys">
+      <Position>25</Position>
+      <Comment>所属教研室</Comment>
+      <DataType>varchar(6)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="412" parent="285" name="ssjysmc">
+      <Position>26</Position>
+      <Comment>所属教研室名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="413" parent="285" name="remark">
+      <Position>27</Position>
+      <DataType>varchar(250)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="414" parent="285" name="create_time">
+      <Position>28</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="415" parent="285" name="update_time">
+      <Position>29</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="416" parent="285" name="deltag">
+      <Position>30</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="417" parent="285" name="zdjs">
+      <Position>31</Position>
+      <Comment>主导教师</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="418" parent="285" name="zdjsxm">
+      <Position>32</Position>
+      <Comment>主导教师姓名</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="419" parent="285" name="qtfdjsxm">
+      <Position>33</Position>
+      <Comment>其它辅导教师(姓名,)</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="420" parent="285" name="qtfdjs">
+      <Position>34</Position>
+      <Comment>其它辅导教师(工号,)</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="421" parent="285" name="ssbj">
+      <Position>35</Position>
+      <Comment>所属班级</Comment>
+      <DataType>varchar(13)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="422" parent="285" name="bjmc">
+      <Position>36</Position>
+      <Comment>班级名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="423" parent="285" name="rwlxzt">
+      <Position>37</Position>
+      <Comment>任务类型状态(正常课/合班/选课)</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="424" parent="285" name="zxzt">
+      <Position>38</Position>
+      <Comment>任务执行状态</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="425" parent="285" name="kdb">
+      <Position>39</Position>
+      <Comment>课代表(学生)</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="426" parent="285" name="kdbxm">
+      <Position>40</Position>
+      <Comment>科代表姓名</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="427" parent="285" name="kdbfzkqkf">
+      <Position>41</Position>
+      <Comment>科代表辅助考勤开放</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="428" parent="285" name="sfkh">
+      <Position>42</Position>
+      <Comment>是否考核</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="429" parent="285" name="cjptlx">
+      <Position>43</Position>
+      <Comment>成绩评定类型</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="430" parent="285" name="cjtjbz">
+      <Position>44</Position>
+      <Comment>成绩提交标志</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="431" parent="285" name="jcxybz">
+      <Position>45</Position>
+      <Comment>教材选用标志(0无操作 1已选用 2无需选用)</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="432" parent="285" name="oprybh">
+      <Position>46</Position>
+      <Comment>操作人员</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="433" parent="285" name="skcddm">
+      <Position>47</Position>
+      <Comment>授课场地代码</Comment>
+      <DataType>varchar(12)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="434" parent="285" name="skcdmc">
+      <Position>48</Position>
+      <Comment>授课场地名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="435" parent="285" name="ksz">
+      <Position>49</Position>
+      <Comment>开始周</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="436" parent="285" name="jsz">
+      <Position>50</Position>
+      <Comment>结束周</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="437" parent="285" name="pkxx">
+      <Position>51</Position>
+      <Comment>排课信息</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="438" parent="285" name="jxzc">
+      <Position>52</Position>
+      <Comment>教学周次</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="439" parent="285" name="pkcz">
+      <Position>53</Position>
+      <Comment>排课周次</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="440" parent="285" name="bbzsjn">
+      <Position>54</Position>
+      <Comment>学生学习本课程必备的知识和技能</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="441" parent="285" name="hxkctgzs">
+      <Position>55</Position>
+      <Comment>本课程为后续课程提供的知识</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="442" parent="285" name="hxkctgjn">
+      <Position>56</Position>
+      <Comment>本课程为后续课程提供的技能</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="443" parent="285" name="kcjxdgxx">
+      <Position>57</Position>
+      <Comment>教学大纲名称、版本</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="444" parent="285" name="kcjyzsmb">
+      <Position>58</Position>
+      <Comment>知识目标</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="445" parent="285" name="kcjynlmb">
+      <Position>59</Position>
+      <Comment>能力目标</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="446" parent="285" name="kckhbf">
+      <Position>60</Position>
+      <Comment>本课程的考核办法</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="447" parent="285" name="jdzjs">
+      <Position>61</Position>
+      <Comment>结对子教师</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="448" parent="285" name="jdzjsks">
+      <Position>62</Position>
+      <Comment>结对子教师课时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="449" parent="285" name="gzlxs">
+      <Position>63</Position>
+      <Comment>工作量系数</Comment>
+      <DataType>decimal(5,3 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1.000&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="450" parent="285" name="yrdxs">
+      <Position>64</Position>
+      <Comment>已认定学时</Comment>
+      <DataType>decimal(10,3 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0.000&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="451" parent="285" name="skjhsh">
+      <Position>65</Position>
+      <Comment>授课计划审核</Comment>
+      <DataType>tinyint(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="452" parent="285" name="cpycrs">
+      <Position>66</Position>
+      <Comment>测评应测学生数</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="453" parent="285" name="cpscrs">
+      <Position>67</Position>
+      <Comment>测评实测学生数</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="454" parent="285" name="cppjf">
+      <Position>68</Position>
+      <Comment>学生测评评均分</Comment>
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="455" parent="285" name="cpyxrs">
+      <Position>69</Position>
+      <Comment>测评有效人数</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="456" parent="285" name="cppgdf">
+      <Position>70</Position>
+      <Comment>测评评估得分</Comment>
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="457" parent="285" name="cjtjan">
+      <Position>71</Position>
+      <Comment>成绩提交按钮</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="458" parent="285" name="skjhtjan">
+      <Position>72</Position>
+      <Comment>授课计划提交</Comment>
+      <DataType>tinyint(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="459" parent="285" name="pkzt">
+      <Position>73</Position>
+      <Comment>排课状态1已排0未排或已排结束</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="460" parent="285" name="deltag">
+      <ColNames>xn
+xq
+deltag
+ssxy
+ssxb
+ssjys</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="461" parent="285" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="462" parent="286" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="463" parent="286" name="jxrwid">
+      <Position>2</Position>
+      <Comment>教学任务ID</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="464" parent="286" name="xkxxid">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="465" parent="286" name="bjdm">
+      <Position>4</Position>
+      <DataType>varchar(13)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="466" parent="286" name="remark">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="467" parent="286" name="create_time">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="468" parent="286" name="update_time">
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="469" parent="286" name="deltag">
+      <Position>8</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="470" parent="286" name="oprybh">
+      <Position>9</Position>
+      <Comment>操作人员</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="471" parent="286" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="472" parent="287" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="473" parent="287" name="pxh">
+      <Position>2</Position>
+      <Comment>排序号</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="474" parent="287" name="jysdm">
+      <Position>3</Position>
+      <Comment>自编教研室代码(系代码４教研室代码２)</Comment>
+      <DataType>varchar(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="475" parent="287" name="jysmc">
+      <Position>4</Position>
+      <Comment>教研室名称</Comment>
+      <DataType>char(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="476" parent="287" name="ssxb">
+      <Position>5</Position>
+      <Comment>所属系部</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="477" parent="287" name="ssxy">
+      <Position>6</Position>
+      <Comment>所属学院</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="478" parent="287" name="fzr">
+      <Position>7</Position>
+      <Comment>教研室负责人姓名</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="479" parent="287" name="fzrxm">
+      <Position>8</Position>
+      <Comment>教研室负责人姓名</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="480" parent="287" name="remark">
+      <Position>9</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="481" parent="287" name="deltag">
+      <Position>10</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="482" parent="287" name="create_time">
+      <Position>11</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="483" parent="287" name="update_time">
+      <Position>12</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="484" parent="287" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="485" parent="288" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="486" parent="288" name="jzldm">
+      <Position>2</Position>
+      <Comment>自编建筑楼代码(学院２位校区代码２位建筑楼代码3位)</Comment>
+      <DataType>varchar(7)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="487" parent="288" name="jzlmc">
+      <Position>3</Position>
+      <Comment>建筑楼名称</Comment>
+      <DataType>char(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="488" parent="288" name="ssxy">
+      <Position>4</Position>
+      <Comment>所属学院</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="489" parent="288" name="ssxq">
+      <Position>5</Position>
+      <Comment>所属校区</Comment>
+      <DataType>varchar(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="490" parent="288" name="sfzsl">
+      <Position>6</Position>
+      <Comment>是否住宿楼</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="491" parent="288" name="remark">
+      <Position>7</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="492" parent="288" name="deltag">
+      <Position>8</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="493" parent="288" name="create_time">
+      <Position>9</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="494" parent="288" name="update_time">
+      <Position>10</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="495" parent="288" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="496" parent="289" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="497" parent="289" name="ssxy">
+      <Position>2</Position>
+      <Comment>所属学院</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="498" parent="289" name="kcfl">
+      <Position>3</Position>
+      <Comment>课程分类</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="499" parent="289" name="kcdm">
+      <Position>4</Position>
+      <Comment>自编课程代码(学院2分类2代码6高低位1)</Comment>
+      <DataType>varchar(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="500" parent="289" name="kcmc">
+      <Position>5</Position>
+      <Comment>课程名称</Comment>
+      <DataType>char(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="501" parent="289" name="kcjc">
+      <Position>6</Position>
+      <Comment>课程简称</Comment>
+      <DataType>char(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="502" parent="289" name="kcywmc">
+      <Position>7</Position>
+      <Comment>课程英文名称</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="503" parent="289" name="ssjys">
+      <Position>8</Position>
+      <Comment>所属教研室</Comment>
+      <DataType>varchar(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="504" parent="289" name="ssjysmc">
+      <Position>9</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="505" parent="289" name="pykssy">
+      <Position>10</Position>
+      <Comment>拼音快速索引</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="506" parent="289" name="fjxrwkc">
+      <Position>11</Position>
+      <Comment>非教学任务课程</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="507" parent="289" name="mrkxkc">
+      <Position>12</Position>
+      <Comment>默认空闲课程</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="508" parent="289" name="remark">
+      <Position>13</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="509" parent="289" name="create_time">
+      <Position>14</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="510" parent="289" name="update_time">
+      <Position>15</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="511" parent="289" name="deltag">
+      <Position>16</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="512" parent="289" name="oprybh">
+      <Position>17</Position>
+      <Comment>操作人员</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="513" parent="289" name="tzsl">
+      <Position>18</Position>
+      <Comment>帖子数量</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="514" parent="289" name="zhfbsj">
+      <Position>19</Position>
+      <Comment>最后发布时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="515" parent="289" name="kcdm">
+      <ColNames>kcdm</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="516" parent="289" name="kcmc">
+      <ColNames>kcmc</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="517" parent="289" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="518" parent="289" name="kcdm">
+      <ColNames>kcdm</ColNames>
+      <UnderlyingIndexName>kcdm</UnderlyingIndexName>
+    </key>
+    <key id="519" parent="289" name="kcmc">
+      <ColNames>kcmc</ColNames>
+      <UnderlyingIndexName>kcmc</UnderlyingIndexName>
+    </key>
+    <column id="520" parent="290" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="521" parent="290" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="522" parent="290" name="parentId">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="523" parent="290" name="resUrl">
+      <Position>4</Position>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="524" parent="290" name="level">
+      <Position>5</Position>
+      <DataType>int(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="525" parent="290" name="status">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="526" parent="290" name="sysId">
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="527" parent="290" name="icon">
+      <Position>8</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="528" parent="290" name="color">
+      <Position>9</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="529" parent="290" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="530" parent="291" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="531" parent="291" name="jxrwid">
+      <Position>2</Position>
+      <Comment>教学任务ID</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="532" parent="291" name="xqs">
+      <Position>3</Position>
+      <Comment>星期</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="533" parent="291" name="jc">
+      <Position>4</Position>
+      <Comment>节次</Comment>
+      <DataType>tinyint(2)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="534" parent="291" name="skcddm">
+      <Position>5</Position>
+      <Comment>授课场地代码</Comment>
+      <DataType>varchar(12)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="535" parent="291" name="skcdmc">
+      <Position>6</Position>
+      <Comment>授课场地名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="536" parent="291" name="skjs">
+      <Position>7</Position>
+      <Comment>授课教师</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="537" parent="291" name="skjsxm">
+      <Position>8</Position>
+      <Comment>授课教师姓名</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="538" parent="291" name="dszsz">
+      <Position>9</Position>
+      <Comment>单双周设置 0无/1单/2双</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="539" parent="291" name="pkzc">
+      <Position>10</Position>
+      <Comment>排课周次</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="540" parent="291" name="pkzcshow">
+      <Position>11</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="541" parent="291" name="remark">
+      <Position>12</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="542" parent="291" name="create_time">
+      <Position>13</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="543" parent="291" name="update_time">
+      <Position>14</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="544" parent="291" name="deltag">
+      <Position>15</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="545" parent="291" name="oprybh">
+      <Position>16</Position>
+      <Comment>操作人员</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="546" parent="291" name="sdzt">
+      <Position>17</Position>
+      <Comment>锁定状态</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="547" parent="291" name="btbpk">
+      <Position>18</Position>
+      <Comment>不同步排课(合班情况，默认同步）</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="548" parent="291" name="tbpkcyjxrwid">
+      <Position>19</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="549" parent="291" name="tbpkcy">
+      <Position>20</Position>
+      <Comment>同步排课成员(合班情况)</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="550" parent="291" name="glsd">
+      <Position>21</Position>
+      <Comment>管理员锁定</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="551" parent="291" name="jxrwid">
+      <ColNames>jxrwid</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="552" parent="291" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="553" parent="292" name="id">
+      <Position>1</Position>
+      <Comment>主键id</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="554" parent="292" name="roleId">
+      <Position>2</Position>
+      <Comment>角色id</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="555" parent="292" name="menuId">
+      <Position>3</Position>
+      <Comment>菜单id</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="556" parent="292" name="addFlag">
+      <Position>4</Position>
+      <Comment>添加权限:为true可以添加</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="557" parent="292" name="updateFlag">
+      <Position>5</Position>
+      <Comment>修改权限:为true可以修改</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="558" parent="292" name="deleteFlag">
+      <Position>6</Position>
+      <Comment>删除权限:为true可以删除</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="559" parent="292" name="selectFlag">
+      <Position>7</Position>
+      <Comment>查询权限:为true可以查询</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="560" parent="292" name="type">
+      <Position>8</Position>
+      <Comment>1 为父菜单2 为子菜单</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="561" parent="292" name="fk1_roleId">
+      <ColNames>roleId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="562" parent="292" name="fk2_menuId">
+      <ColNames>menuId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="563" parent="292" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="564" parent="293" name="id">
+      <Position>1</Position>
+      <DataType>int(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="565" parent="293" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="566" parent="293" name="desc">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="567" parent="293" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="568" parent="294" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="569" parent="294" name="apptoken">
+      <Position>2</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="570" parent="294" name="rybh">
+      <Position>3</Position>
+      <Comment>人员编号</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="571" parent="294" name="xm">
+      <Position>4</Position>
+      <Comment>姓名</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="572" parent="294" name="xb">
+      <Position>5</Position>
+      <Comment>性别</Comment>
+      <DataType>bigint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="573" parent="294" name="zjlx">
+      <Position>6</Position>
+      <Comment>证件类型</Comment>
+      <DataType>bigint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="574" parent="294" name="zjlxmc">
+      <Position>7</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="575" parent="294" name="zjh">
+      <Position>8</Position>
+      <Comment>证件号</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="576" parent="294" name="hklbdm">
+      <Position>9</Position>
+      <Comment>户口类别代码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="577" parent="294" name="hklbmc">
+      <Position>10</Position>
+      <Comment>户口类别名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="578" parent="294" name="hkdq">
+      <Position>11</Position>
+      <Comment>户口地区</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="579" parent="294" name="hkdqmc">
+      <Position>12</Position>
+      <Comment>户口地区名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="580" parent="294" name="csny">
+      <Position>13</Position>
+      <Comment>出生年月</Comment>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="581" parent="294" name="mzdm">
+      <Position>14</Position>
+      <Comment>民族代码</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="582" parent="294" name="mzmc">
+      <Position>15</Position>
+      <Comment>民族名称</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="583" parent="294" name="zzmmdm">
+      <Position>16</Position>
+      <Comment>政治面貌代码</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="584" parent="294" name="zzmmmc">
+      <Position>17</Position>
+      <Comment>政治面貌名称</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="585" parent="294" name="hyzkdm">
+      <Position>18</Position>
+      <Comment>婚姻状况代码</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="586" parent="294" name="hyzkmc">
+      <Position>19</Position>
+      <Comment>婚姻状况名称</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="587" parent="294" name="jtdh">
+      <Position>20</Position>
+      <Comment>家庭电话</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="588" parent="294" name="bgdh">
+      <Position>21</Position>
+      <Comment>办公电话</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="589" parent="294" name="yddh">
+      <Position>22</Position>
+      <Comment>移动电话</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="590" parent="294" name="dzxx">
+      <Position>23</Position>
+      <Comment>电子信箱</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="591" parent="294" name="jtdz">
+      <Position>24</Position>
+      <Comment>家庭地址</Comment>
+      <DataType>varchar(150)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="592" parent="294" name="jtdzyb">
+      <Position>25</Position>
+      <Comment>家庭地址邮编</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="593" parent="294" name="zgxldm">
+      <Position>26</Position>
+      <Comment>最高学历代码</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="594" parent="294" name="zgxlmc">
+      <Position>27</Position>
+      <Comment>最高学历名称</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="595" parent="294" name="zgxwdm">
+      <Position>28</Position>
+      <Comment>最高学位代码</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="596" parent="294" name="zgxwmc">
+      <Position>29</Position>
+      <Comment>最高学位名称</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="597" parent="294" name="byxx">
+      <Position>30</Position>
+      <Comment>毕业学校</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="598" parent="294" name="byzy">
+      <Position>31</Position>
+      <Comment>毕业专业</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="599" parent="294" name="zzzcdm">
+      <Position>32</Position>
+      <Comment>最终职称代码</Comment>
+      <DataType>varbinary(3)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="600" parent="294" name="zzzcmc">
+      <Position>33</Position>
+      <Comment>最终职称名称</Comment>
+      <DataType>varchar(25)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="601" parent="294" name="pykssy">
+      <Position>34</Position>
+      <Comment>拼音快速索引</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="602" parent="294" name="zym">
+      <Position>35</Position>
+      <Comment>曾用名</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="603" parent="294" name="cjdpsj">
+      <Position>36</Position>
+      <Comment>参加党派时间</Comment>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="604" parent="294" name="jhsyzk">
+      <Position>37</Position>
+      <Comment>计划生育状况</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="605" parent="294" name="jhsyzkmc">
+      <Position>38</Position>
+      <Comment>计划生育状况</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="606" parent="294" name="cardid">
+      <Position>39</Position>
+      <Comment>一卡通唯一码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="607" parent="294" name="gjdqdm">
+      <Position>40</Position>
+      <Comment>国籍/地区</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="608" parent="294" name="gjdqmc">
+      <Position>41</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="609" parent="294" name="xmpy">
+      <Position>42</Position>
+      <Comment>姓名拼音</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="610" parent="294" name="deltag">
+      <Position>43</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="611" parent="294" name="remark">
+      <Position>44</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="612" parent="294" name="photo">
+      <Position>45</Position>
+      <Comment>照片</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="613" parent="294" name="audit_status">
+      <Position>46</Position>
+      <Comment>-1 不通过 ，0 待审核，1 通过</Comment>
+      <DataType>int(11)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="614" parent="294" name="auditor">
+      <Position>47</Position>
+      <Comment>审核人</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="615" parent="294" name="audit_time">
+      <Position>48</Position>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="616" parent="294" name="xyjgId">
+      <Position>49</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="617" parent="294" name="create_time">
+      <Position>50</Position>
+      <DataType>timestamp|0s</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="618" parent="294" name="update_time">
+      <Position>51</Position>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="619" parent="294" name="rybh">
+      <ColNames>rybh</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="620" parent="294" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="621" parent="295" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="622" parent="295" name="teacherId">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="623" parent="295" name="audit_status">
+      <Position>3</Position>
+      <Comment>-1 不通过 ，0 待审核，1 通过</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="624" parent="295" name="auditor">
+      <Position>4</Position>
+      <Comment>审核人</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="625" parent="295" name="audit_opinion">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="626" parent="295" name="audit_time">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="627" parent="295" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="628" parent="296" name="id">
+      <Position>1</Position>
+      <DataType>int(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="629" parent="296" name="username">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="630" parent="296" name="password">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="631" parent="296" name="number">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="632" parent="296" name="phone">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="633" parent="296" name="apptoken">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="634" parent="296" name="wxid">
+      <Position>7</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="635" parent="296" name="mmcwcs">
+      <Position>8</Position>
+      <Comment>密码错误次数</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="636" parent="296" name="status">
+      <Position>9</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="637" parent="296" name="last_login_time">
+      <Position>10</Position>
+      <Comment>最后登录时间</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="638" parent="296" name="last_login_ip">
+      <Position>11</Position>
+      <Comment>最后登录ip</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="639" parent="296" name="login_count">
+      <Position>12</Position>
+      <Comment>登陆次数</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="640" parent="296" name="type">
+      <Position>13</Position>
+      <Comment>1为教师，2为学生</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="641" parent="296" name="fk">
+      <Position>14</Position>
+      <Comment>教师或学生的ID</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="642" parent="296" name="roleId">
+      <Position>15</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="643" parent="296" name="deltag">
+      <Position>16</Position>
+      <Comment>逻辑删除状态0:存在1:删除</Comment>
+      <DataType>int(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="644" parent="296" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="645" parent="297" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="646" parent="297" name="xn">
+      <Position>2</Position>
+      <Comment>学年</Comment>
+      <DataType>varchar(9)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="647" parent="297" name="xq">
+      <Position>3</Position>
+      <Comment>学期</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="648" parent="297" name="kxsj">
+      <Position>4</Position>
+      <Comment>开学时间</Comment>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="649" parent="297" name="jssj">
+      <Position>5</Position>
+      <Comment>结束时间</Comment>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="650" parent="297" name="zs">
+      <Position>6</Position>
+      <Comment>周数</Comment>
+      <DataType>tinyint(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="651" parent="297" name="xsbdsj">
+      <Position>7</Position>
+      <Comment>新生报到时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="652" parent="297" name="zckjxrcapkfkssj">
+      <Position>8</Position>
+      <Comment>正常课教学日程安排开放开始时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="653" parent="297" name="zckjxrcapkfjssj">
+      <Position>9</Position>
+      <Comment>正常课教学日程安排开放结束时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="654" parent="297" name="cjlrkssj">
+      <Position>10</Position>
+      <Comment>成绩登分开始时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="655" parent="297" name="cjlrjssj">
+      <Position>11</Position>
+      <Comment>成绩登分结束时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="656" parent="297" name="remark">
+      <Position>12</Position>
+      <DataType>varchar(250)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="657" parent="297" name="deltag">
+      <Position>13</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="658" parent="297" name="create_time">
+      <Position>14</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="659" parent="297" name="update_time">
+      <Position>15</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="660" parent="297" name="xn">
+      <ColNames>xn
+xq</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="661" parent="297" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="662" parent="298" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="663" parent="298" name="xsxh">
+      <Position>2</Position>
+      <Comment>学生学号</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="664" parent="298" name="xm">
+      <Position>3</Position>
+      <Comment>姓名</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="665" parent="298" name="xb">
+      <Position>4</Position>
+      <Comment>性别</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="666" parent="298" name="zjlx">
+      <Position>5</Position>
+      <Comment>证件类型</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="667" parent="298" name="zjlxmc">
+      <Position>6</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="668" parent="298" name="zjh">
+      <Position>7</Position>
+      <Comment>证件号</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="669" parent="298" name="csny">
+      <Position>8</Position>
+      <Comment>出生年月</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="670" parent="298" name="mzdm">
+      <Position>9</Position>
+      <Comment>民族代码</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="671" parent="298" name="mzmc">
+      <Position>10</Position>
+      <Comment>民族名称</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="672" parent="298" name="zzmmdm">
+      <Position>11</Position>
+      <Comment>政治面貌代码</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="673" parent="298" name="zzmmmc">
+      <Position>12</Position>
+      <Comment>政治面貌名称</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="674" parent="298" name="hyzkdm">
+      <Position>13</Position>
+      <Comment>婚姻状况代码</Comment>
+      <DataType>varchar(3)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="675" parent="298" name="jtdh">
+      <Position>14</Position>
+      <Comment>家庭电话</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="676" parent="298" name="jtdz">
+      <Position>15</Position>
+      <Comment>家庭地址</Comment>
+      <DataType>varchar(150)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="677" parent="298" name="jtdzyb">
+      <Position>16</Position>
+      <Comment>家庭地址邮编</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="678" parent="298" name="byxx">
+      <Position>17</Position>
+      <Comment>毕业学校</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="679" parent="298" name="byzy">
+      <Position>18</Position>
+      <Comment>毕业专业</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="680" parent="298" name="pykssy">
+      <Position>19</Position>
+      <Comment>拼音快速索引</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="681" parent="298" name="gkksh">
+      <Position>20</Position>
+      <Comment>高考考生号</Comment>
+      <DataType>varchar(14)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="682" parent="298" name="zwh">
+      <Position>21</Position>
+      <DataType>smallint(3)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="683" parent="298" name="rxny">
+      <Position>22</Position>
+      <Comment>入学年月</Comment>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="684" parent="298" name="ssxy">
+      <Position>23</Position>
+      <Comment>所属学院</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="685" parent="298" name="ssxb">
+      <Position>24</Position>
+      <Comment>所属系部</Comment>
+      <DataType>varchar(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="686" parent="298" name="ssxbmc">
+      <Position>25</Position>
+      <Comment>所属系部名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="687" parent="298" name="sszy">
+      <Position>26</Position>
+      <Comment>所属专业</Comment>
+      <DataType>varchar(7)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="688" parent="298" name="sszymc">
+      <Position>27</Position>
+      <Comment>所属专业名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="689" parent="298" name="ssbj">
+      <Position>28</Position>
+      <Comment>所属班级</Comment>
+      <DataType>varchar(13)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="690" parent="298" name="ssbjmc">
+      <Position>29</Position>
+      <Comment>所属班级名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="691" parent="298" name="xslb">
+      <Position>30</Position>
+      <Comment>学生类别</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="692" parent="298" name="xslbmc">
+      <Position>31</Position>
+      <Comment>学生类别名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="693" parent="298" name="xszt">
+      <Position>32</Position>
+      <Comment>学生状态</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="694" parent="298" name="xjzt">
+      <Position>33</Position>
+      <Comment>学籍状态</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="695" parent="298" name="byzt">
+      <Position>34</Position>
+      <Comment>毕业状态</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="696" parent="298" name="lxrxm">
+      <Position>35</Position>
+      <Comment>联系人姓名</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="697" parent="298" name="lxrdh">
+      <Position>36</Position>
+      <Comment>联系人电话</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="698" parent="298" name="czry">
+      <Position>37</Position>
+      <Comment>操作人员</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="699" parent="298" name="czrxm">
+      <Position>38</Position>
+      <Comment>操作人姓名</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="700" parent="298" name="zsqk">
+      <Position>39</Position>
+      <Comment>住宿情况 1校内住宿 2走读 3校外住宿</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="701" parent="298" name="zsqkmc">
+      <Position>40</Position>
+      <Comment>住宿情况名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="702" parent="298" name="zp">
+      <Position>41</Position>
+      <Comment>个人照片地址</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="703" parent="298" name="yhmc">
+      <Position>42</Position>
+      <Comment>银行名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="704" parent="298" name="yhzh">
+      <Position>43</Position>
+      <Comment>银行帐号</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="705" parent="298" name="sydq">
+      <Position>44</Position>
+      <Comment>生源地</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="706" parent="298" name="sydqmc">
+      <Position>45</Position>
+      <Comment>生源地名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="707" parent="298" name="zsssjzl">
+      <Position>46</Position>
+      <Comment>住宿所属建筑楼</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="708" parent="298" name="zsssfjh">
+      <Position>47</Position>
+      <Comment>住宿所属房间号</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="709" parent="298" name="zsssjzlmc">
+      <Position>48</Position>
+      <Comment>住宿所属建筑楼名称</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="710" parent="298" name="gatqwdm">
+      <Position>49</Position>
+      <Comment>港澳台侨外</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="711" parent="298" name="gatqwmc">
+      <Position>50</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="712" parent="298" name="sfsqzn">
+      <Position>51</Position>
+      <Comment>是否随迁子女</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="713" parent="298" name="csdq">
+      <Position>52</Position>
+      <Comment>出生地区</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="714" parent="298" name="csdqmc">
+      <Position>53</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="715" parent="298" name="hkdz">
+      <Position>54</Position>
+      <Comment>户口地址</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="716" parent="298" name="hksspcs">
+      <Position>55</Position>
+      <Comment>户口所属派出所</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="717" parent="298" name="hkszdq">
+      <Position>56</Position>
+      <Comment>户口所在地区</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="718" parent="298" name="hkszdqmc">
+      <Position>57</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="719" parent="298" name="jkzkdm">
+      <Position>58</Position>
+      <Comment>健康状况</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="720" parent="298" name="jkzkmc">
+      <Position>59</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="721" parent="298" name="zzdq">
+      <Position>60</Position>
+      <Comment>住址地区</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="722" parent="298" name="zzdqmc">
+      <Position>61</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="723" parent="298" name="jzdlxdm">
+      <Position>62</Position>
+      <Comment>居住地类型</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="724" parent="298" name="jzdlxmc">
+      <Position>63</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="725" parent="298" name="sfdszn">
+      <Position>64</Position>
+      <Comment>是否独生子女</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="726" parent="298" name="deltag">
+      <Position>65</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="727" parent="298" name="remark">
+      <Position>66</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="728" parent="298" name="create_time">
+      <Position>67</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="729" parent="298" name="update_time">
+      <Position>68</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="730" parent="298" name="xsxh">
+      <ColNames>xsxh</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="731" parent="298" name="ssxy">
+      <ColNames>ssxy
+ssxb
+sszy
+ssbj
+xszt</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="732" parent="298" name="ssbj">
+      <ColNames>ssbj</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="733" parent="298" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="734" parent="299" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="735" parent="299" name="jgdm">
+      <Position>2</Position>
+      <Comment>自编机构代码(学院２位+...)</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="736" parent="299" name="jgmc">
+      <Position>3</Position>
+      <Comment>机构名称</Comment>
+      <DataType>char(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="737" parent="299" name="ssxy">
+      <Position>4</Position>
+      <Comment>所属学院</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="738" parent="299" name="pid">
+      <Position>5</Position>
+      <Comment>上级机构</Comment>
+      <DataType>smallint(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="739" parent="299" name="path">
+      <Position>6</Position>
+      <Comment>层级</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="740" parent="299" name="level">
+      <Position>7</Position>
+      <Comment>层次</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="741" parent="299" name="sfszjg">
+      <Position>8</Position>
+      <Comment>是否实质机构</Comment>
+      <DataType>tinyint(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="742" parent="299" name="sfjxxb">
+      <Position>9</Position>
+      <Comment>是否教学系部</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="743" parent="299" name="remark">
+      <Position>10</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="744" parent="299" name="jgdh">
+      <Position>11</Position>
+      <Comment>机构电话</Comment>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="745" parent="299" name="deltag">
+      <Position>12</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="746" parent="299" name="create_time">
+      <Position>13</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="747" parent="299" name="update_time">
+      <Position>14</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="748" parent="299" name="xbdm">
+      <ColNames>jgdm</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="749" parent="299" name="pid">
+      <ColNames>pid</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="750" parent="299" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="751" parent="299" name="xbdm">
+      <ColNames>jgdm</ColNames>
+      <UnderlyingIndexName>xbdm</UnderlyingIndexName>
+    </key>
+    <column id="752" parent="300" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="753" parent="300" name="bsdm">
+      <Position>2</Position>
+      <Comment>部属代码</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="754" parent="300" name="xydm">
+      <Position>3</Position>
+      <Comment>自编学院代码</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="755" parent="300" name="xymc">
+      <Position>4</Position>
+      <Comment>学院名称</Comment>
+      <DataType>char(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="756" parent="300" name="remark">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="757" parent="300" name="dqxn">
+      <Position>6</Position>
+      <Comment>当前学年</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="758" parent="300" name="dqxq">
+      <Position>7</Position>
+      <Comment>当前学期</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="759" parent="300" name="xkxn">
+      <Position>8</Position>
+      <Comment>选课学年</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="760" parent="300" name="xkxq">
+      <Position>9</Position>
+      <Comment>选课学期</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="761" parent="300" name="deltag">
+      <Position>10</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="762" parent="300" name="create_time">
+      <Position>11</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="763" parent="300" name="update_time">
+      <Position>12</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="764" parent="300" name="xydm">
+      <ColNames>xydm</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="765" parent="300" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="766" parent="300" name="xydm">
+      <ColNames>xydm</ColNames>
+      <UnderlyingIndexName>xydm</UnderlyingIndexName>
+    </key>
+    <column id="767" parent="301" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="768" parent="301" name="sszdlb">
+      <Position>2</Position>
+      <Comment>所属字典类别</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="769" parent="301" name="dmbh">
+      <Position>3</Position>
+      <Comment>字典代码</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="770" parent="301" name="dmmc">
+      <Position>4</Position>
+      <Comment>字典代码名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="771" parent="301" name="sort">
+      <Position>5</Position>
+      <Comment>排序</Comment>
+      <DataType>smallint(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="772" parent="301" name="pykssy">
+      <Position>6</Position>
+      <Comment>拼音首字母快速索引</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="773" parent="301" name="xsbz">
+      <Position>7</Position>
+      <Comment>显示标志 1显示 0 不显示</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="774" parent="301" name="fqbz">
+      <Position>8</Position>
+      <Comment>废弃标志 1废弃 0启用</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="775" parent="301" name="remark">
+      <Position>9</Position>
+      <DataType>varchar(250)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="776" parent="301" name="create_time">
+      <Position>10</Position>
+      <DataType>timestamp|0s</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="777" parent="301" name="update_time">
+      <Position>11</Position>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="778" parent="301" name="deltag">
+      <Position>12</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="779" parent="301" name="sszdlb">
+      <ColNames>sszdlb</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="780" parent="301" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="781" parent="302" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="782" parent="302" name="lbdm">
+      <Position>2</Position>
+      <Comment>字典类别代码</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="783" parent="302" name="lbmc">
+      <Position>3</Position>
+      <Comment>字典类别名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="784" parent="302" name="remark">
+      <Position>4</Position>
+      <DataType>varchar(250)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="785" parent="302" name="create_time">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="786" parent="302" name="update_time">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="787" parent="302" name="deltag">
+      <Position>7</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="788" parent="302" name="lbdm">
+      <ColNames>lbdm</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="789" parent="302" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="790" parent="302" name="lbdm">
+      <ColNames>lbdm</ColNames>
+      <UnderlyingIndexName>lbdm</UnderlyingIndexName>
+    </key>
+    <column id="791" parent="303" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="792" parent="303" name="sszy">
+      <Position>2</Position>
+      <Comment>所属专业</Comment>
+      <DataType>varchar(7)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="793" parent="303" name="ksnj">
+      <Position>3</Position>
+      <Comment>开设年级</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="794" parent="303" name="remark">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="795" parent="303" name="create_time">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="796" parent="303" name="update_time">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="797" parent="303" name="deltag">
+      <Position>7</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="798" parent="303" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="799" parent="304" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="800" parent="304" name="sszy">
+      <Position>2</Position>
+      <Comment>所属专业</Comment>
+      <DataType>varchar(7)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="801" parent="304" name="ksnj">
+      <Position>3</Position>
+      <Comment>开设年级</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="802" parent="304" name="zxqh">
+      <Position>4</Position>
+      <Comment>总学期号</Comment>
+      <DataType>tinyint(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="803" parent="304" name="xn">
+      <Position>5</Position>
+      <Comment>学年</Comment>
+      <DataType>varchar(9)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="804" parent="304" name="xq">
+      <Position>6</Position>
+      <Comment>学期</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="805" parent="304" name="jhlx">
+      <Position>7</Position>
+      <Comment>计划类型</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="806" parent="304" name="kcdm">
+      <Position>8</Position>
+      <Comment>课程ID</Comment>
+      <DataType>varchar(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="807" parent="304" name="kcmc">
+      <Position>9</Position>
+      <Comment>课程名称</Comment>
+      <DataType>char(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="808" parent="304" name="kclb">
+      <Position>10</Position>
+      <Comment>课程类别</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="809" parent="304" name="kclx">
+      <Position>11</Position>
+      <Comment>课程类型</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="810" parent="304" name="zyfx">
+      <Position>12</Position>
+      <Comment>专业方向ID</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="811" parent="304" name="zyfxmc">
+      <Position>13</Position>
+      <Comment>专业方向名称</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="812" parent="304" name="zgkc">
+      <Position>14</Position>
+      <Comment>主干课程</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="813" parent="304" name="khfs">
+      <Position>15</Position>
+      <Comment>考核方式</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="814" parent="304" name="xqzxs">
+      <Position>16</Position>
+      <Comment>学期总学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="815" parent="304" name="jkxs">
+      <Position>17</Position>
+      <Comment>讲课学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="816" parent="304" name="syxs">
+      <Position>18</Position>
+      <Comment>实验学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="817" parent="304" name="sjxs">
+      <Position>19</Position>
+      <Comment>上机学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="818" parent="304" name="zxs">
+      <Position>20</Position>
+      <Comment>周学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="819" parent="304" name="zs">
+      <Position>21</Position>
+      <Comment>周数</Comment>
+      <DataType>tinyint(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="820" parent="304" name="kcxf">
+      <Position>22</Position>
+      <Comment>课程学分</Comment>
+      <DataType>double|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="821" parent="304" name="ssxy">
+      <Position>23</Position>
+      <Comment>所属学院</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="822" parent="304" name="ssxb">
+      <Position>24</Position>
+      <Comment>所属系部</Comment>
+      <DataType>varchar(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="823" parent="304" name="ssxbmc">
+      <Position>25</Position>
+      <Comment>系部名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="824" parent="304" name="ssjys">
+      <Position>26</Position>
+      <Comment>所属教研室</Comment>
+      <DataType>varchar(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="825" parent="304" name="ssjysmc">
+      <Position>27</Position>
+      <Comment>所属教研室名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="826" parent="304" name="remark">
+      <Position>28</Position>
+      <DataType>varchar(250)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="827" parent="304" name="create_time">
+      <Position>29</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="828" parent="304" name="update_time">
+      <Position>30</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="829" parent="304" name="deltag">
+      <Position>31</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="830" parent="304" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="831" parent="305" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="832" parent="305" name="sszy">
+      <Position>2</Position>
+      <Comment>所属专业</Comment>
+      <DataType>varchar(7)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="833" parent="305" name="ksnj">
+      <Position>3</Position>
+      <Comment>开设年级</Comment>
+      <DataType>smallint(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="834" parent="305" name="jhlx">
+      <Position>4</Position>
+      <Comment>计划类型</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="835" parent="305" name="zyfx">
+      <Position>5</Position>
+      <Comment>专业方向ID</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="836" parent="305" name="zyfxmc">
+      <Position>6</Position>
+      <Comment>专业方向名称</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="837" parent="305" name="khfs">
+      <Position>7</Position>
+      <Comment>考核方式</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="838" parent="305" name="xqzxs">
+      <Position>8</Position>
+      <Comment>学期总学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="839" parent="305" name="jkxs">
+      <Position>9</Position>
+      <Comment>讲课学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="840" parent="305" name="syxs">
+      <Position>10</Position>
+      <Comment>实验学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="841" parent="305" name="sjxs">
+      <Position>11</Position>
+      <Comment>上机学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="842" parent="305" name="zxs">
+      <Position>12</Position>
+      <Comment>周学时</Comment>
+      <DataType>decimal(10,1 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="843" parent="305" name="zs">
+      <Position>13</Position>
+      <Comment>周数</Comment>
+      <DataType>tinyint(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="844" parent="305" name="kcxf">
+      <Position>14</Position>
+      <Comment>课程学分</Comment>
+      <DataType>double|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="845" parent="305" name="ssxy">
+      <Position>15</Position>
+      <Comment>所属学院</Comment>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="846" parent="305" name="ssxb">
+      <Position>16</Position>
+      <Comment>所属系部</Comment>
+      <DataType>varchar(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="847" parent="305" name="ssxbmc">
+      <Position>17</Position>
+      <Comment>系部名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="848" parent="305" name="ssjys">
+      <Position>18</Position>
+      <Comment>所属教研室</Comment>
+      <DataType>varchar(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="849" parent="305" name="ssjysmc">
+      <Position>19</Position>
+      <Comment>所属教研室名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="850" parent="305" name="remark">
+      <Position>20</Position>
+      <DataType>varchar(250)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="851" parent="305" name="create_time">
+      <Position>21</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="852" parent="305" name="update_time">
+      <Position>22</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="853" parent="305" name="deltag">
+      <Position>23</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="854" parent="305" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="855" parent="306" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="856" parent="306" name="ynzydm">
+      <Position>2</Position>
+      <Comment>院内专业代码(系代码4专业代码3)</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="857" parent="306" name="zszydm">
+      <Position>3</Position>
+      <Comment>招生专业代码</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="858" parent="306" name="ynzymc">
+      <Position>4</Position>
+      <Comment>院内专业名称</Comment>
+      <DataType>char(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="859" parent="306" name="zszymc">
+      <Position>5</Position>
+      <Comment>招生专业名称</Comment>
+      <DataType>char(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="860" parent="306" name="ssxb">
+      <Position>6</Position>
+      <Comment>所属系部</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="861" parent="306" name="ssxy">
+      <Position>7</Position>
+      <Comment>所属学院</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="862" parent="306" name="pydxDm">
+      <Position>8</Position>
+      <Comment>培养对象</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="863" parent="306" name="pyccDm">
+      <Position>9</Position>
+      <Comment>培养层次</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="864" parent="306" name="xz">
+      <Position>10</Position>
+      <Comment>学制</Comment>
+      <DataType>tinyint(2)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="865" parent="306" name="remark">
+      <Position>11</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="866" parent="306" name="deltag">
+      <Position>12</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="867" parent="306" name="create_time">
+      <Position>13</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="868" parent="306" name="update_time">
+      <Position>14</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="869" parent="306" name="ynzydm">
+      <ColNames>ynzydm</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="870" parent="306" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="871" parent="306" name="ynzydm">
+      <ColNames>ynzydm</ColNames>
+      <UnderlyingIndexName>ynzydm</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

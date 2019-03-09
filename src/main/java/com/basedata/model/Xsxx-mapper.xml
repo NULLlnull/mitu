@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xsxx">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Xsxx">
+		select * from mitu_xsxx
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					xm like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Xsxx">
+		select *
+		from mitu_xsxx where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Xsxx">
+		update mitu_xsxx
+		<set>
+			<if test="xsxh != null and xsxh != ''">
+				xsxh=#{xsxh},
+			</if>
+			<if test="xm != null and xm != ''">
+				xm=#{xm},
+			</if>
+			<if test="xb != null and xb != ''">
+				xb=#{xb},
+			</if>
+			<if test="zjlx != null and zjlx != ''">
+				zjlx=#{zjlx},
+			</if>
+			<if test="zjlxmc != null and zjlxmc != ''">
+				zjlxmc=#{zjlxmc},
+			</if>
+			<if test="zjh != null and zjh != ''">
+				zjh=#{zjh},
+			</if>
+			<if test="csny != null and csny != ''">
+				csny=#{csny},
+			</if>
+			<if test="mzdm != null and mzdm != ''">
+				mzdm=#{mzdm},
+			</if>
+			<if test="mzmc != null and mzmc != ''">
+				mzmc=#{mzmc},
+			</if>
+			<if test="zzmmdm != null and zzmmdm != ''">
+				zzmmdm=#{zzmmdm},
+			</if>
+			<if test="zzmmmc != null and zzmmmc != ''">
+				zzmmmc=#{zzmmmc},
+			</if>
+			<if test="hyzkdm != null and hyzkdm != ''">
+				hyzkdm=#{hyzkdm},
+			</if>
+			<if test="jtdh != null and jtdh != ''">
+				jtdh=#{jtdh},
+			</if>
+			<if test="jtdz != null and jtdz != ''">
+				jtdz=#{jtdz},
+			</if>
+			<if test="jtdzyb != null and jtdzyb != ''">
+				jtdzyb=#{jtdzyb},
+			</if>
+			<if test="byxx != null and byxx != ''">
+				byxx=#{byxx},
+			</if>
+			<if test="byzy != null and byzy != ''">
+				byzy=#{byzy},
+			</if>
+			<if test="pykssy != null and pykssy != ''">
+				pykssy=#{pykssy},
+			</if>
+			<if test="gkksh != null and gkksh != ''">
+				gkksh=#{gkksh},
+			</if>
+			<if test="zwh != null and zwh != ''">
+				zwh=#{zwh},
+			</if>
+			<if test="rxny != null and rxny != ''">
+				rxny=#{rxny},
+			</if>
+			<if test="ssxy != null and ssxy != ''">
+				ssxy=#{ssxy},
+			</if>
+			<if test="ssxb != null and ssxb != ''">
+				ssxb=#{ssxb},
+			</if>
+			<if test="ssxbmc != null and ssxbmc != ''">
+				ssxbmc=#{ssxbmc},
+			</if>
+			<if test="sszy != null and sszy != ''">
+				sszy=#{sszy},
+			</if>
+			<if test="sszymc != null and sszymc != ''">
+				sszymc=#{sszymc},
+			</if>
+			<if test="ssbj != null and ssbj != ''">
+				ssbj=#{ssbj},
+			</if>
+			<if test="ssbjmc != null and ssbjmc != ''">
+				ssbjmc=#{ssbjmc},
+			</if>
+			<if test="xslb != null and xslb != ''">
+				xslb=#{xslb},
+			</if>
+			<if test="xslbmc != null and xslbmc != ''">
+				xslbmc=#{xslbmc},
+			</if>
+			<if test="xszt != null and xszt != ''">
+				xszt=#{xszt},
+			</if>
+			<if test="xjzt != null and xjzt != ''">
+				xjzt=#{xjzt},
+			</if>
+			<if test="byzt != null and byzt != ''">
+				byzt=#{byzt},
+			</if>
+			<if test="lxrxm != null and lxrxm != ''">
+				lxrxm=#{lxrxm},
+			</if>
+			<if test="lxrdh != null and lxrdh != ''">
+				lxrdh=#{lxrdh},
+			</if>
+			<if test="czry != null and czry != ''">
+				czry=#{czry},
+			</if>
+			<if test="czrxm != null and czrxm != ''">
+				czrxm=#{czrxm},
+			</if>
+			<if test="zsqk != null and zsqk != ''">
+				zsqk=#{zsqk},
+			</if>
+			<if test="zsqkmc != null and zsqkmc != ''">
+				zsqkmc=#{zsqkmc},
+			</if>
+			<if test="zp != null and zp != ''">
+				zp=#{zp},
+			</if>
+			<if test="yhmc != null and yhmc != ''">
+				yhmc=#{yhmc},
+			</if>
+			<if test="yhzh != null and yhzh != ''">
+				yhzh=#{yhzh},
+			</if>
+			<if test="sydq != null and sydq != ''">
+				sydq=#{sydq},
+			</if>
+			<if test="sydqmc != null and sydqmc != ''">
+				sydqmc=#{sydqmc},
+			</if>
+			<if test="zsssjzl != null and zsssjzl != ''">
+				zsssjzl=#{zsssjzl},
+			</if>
+			<if test="zsssfjh != null and zsssfjh != ''">
+				zsssfjh=#{zsssfjh},
+			</if>
+			<if test="zsssjzlmc != null and zsssjzlmc != ''">
+				zsssjzlmc=#{zsssjzlmc},
+			</if>
+			<if test="gatqwdm != null and gatqwdm != ''">
+				gatqwdm=#{gatqwdm},
+			</if>
+			<if test="gatqwmc != null and gatqwmc != ''">
+				gatqwmc=#{gatqwmc},
+			</if>
+			<if test="sfsqzn != null and sfsqzn != ''">
+				sfsqzn=#{sfsqzn},
+			</if>
+			<if test="csdq != null and csdq != ''">
+				csdq=#{csdq},
+			</if>
+			<if test="csdqmc != null and csdqmc != ''">
+				csdqmc=#{csdqmc},
+			</if>
+			<if test="hkdz != null and hkdz != ''">
+				hkdz=#{hkdz},
+			</if>
+			<if test="hksspcs != null and hksspcs != ''">
+				hksspcs=#{hksspcs},
+			</if>
+			<if test="hkszdq != null and hkszdq != ''">
+				hkszdq=#{hkszdq},
+			</if>
+			<if test="hkszdqmc != null and hkszdqmc != ''">
+				hkszdqmc=#{hkszdqmc},
+			</if>
+			<if test="jkzkdm != null and jkzkdm != ''">
+				jkzkdm=#{jkzkdm},
+			</if>
+			<if test="jkzkmc != null and jkzkmc != ''">
+				jkzkmc=#{jkzkmc},
+			</if>
+			<if test="zzdq != null and zzdq != ''">
+				zzdq=#{zzdq},
+			</if>
+			<if test="zzdqmc != null and zzdqmc != ''">
+				zzdqmc=#{zzdqmc},
+			</if>
+			<if test="jzdlxdm != null and jzdlxdm != ''">
+				jzdlxdm=#{jzdlxdm},
+			</if>
+			<if test="jzdlxmc != null and jzdlxmc != ''">
+				jzdlxmc=#{jzdlxmc},
+			</if>
+			<if test="sfdszn != null and sfdszn != ''">
+				sfdszn=#{sfdszn},
+			</if>
+			<if test="remark != null and remark != ''">
+				remark=#{remark},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Xsxx">
+		insert into mitu_xsxx(
+			xsxh,
+			xm,
+			xb,
+			zjlx,
+			zjlxmc,
+			zjh,
+			csny,
+			mzdm,
+			mzmc,
+			zzmmdm,
+			zzmmmc,
+			hyzkdm,
+			jtdh,
+			jtdz,
+			jtdzyb,
+			byxx,
+			byzy,
+			pykssy,
+			gkksh,
+			zwh,
+			rxny,
+			ssxy,
+			ssxb,
+			ssxbmc,
+			sszy,
+			sszymc,
+			ssbj,
+			ssbjmc,
+			xslb,
+			xslbmc,
+			xszt,
+			xjzt,
+			byzt,
+			lxrxm,
+			lxrdh,
+			czry,
+			czrxm,
+			zsqk,
+			zsqkmc,
+			zp,
+			yhmc,
+			yhzh,
+			sydq,
+			sydqmc,
+			zsssjzl,
+			zsssfjh,
+			zsssjzlmc,
+			gatqwdm,
+			gatqwmc,
+			sfsqzn,
+			csdq,
+			csdqmc,
+			hkdz,
+			hksspcs,
+			hkszdq,
+			hkszdqmc,
+			jkzkdm,
+			jkzkmc,
+			zzdq,
+			zzdqmc,
+			jzdlxdm,
+			jzdlxmc,
+			sfdszn,
+			remark)
+		values(
+			#{xsxh},
+			#{xm},
+			#{xb},
+			#{zjlx},
+			#{zjlxmc},
+			#{zjh},
+			#{csny},
+			#{mzdm},
+			#{mzmc},
+			#{zzmmdm},
+			#{zzmmmc},
+			#{hyzkdm},
+			#{jtdh},
+			#{jtdz},
+			#{jtdzyb},
+			#{byxx},
+			#{byzy},
+			#{pykssy},
+			#{gkksh},
+			#{zwh},
+			#{rxny},
+			#{ssxy},
+			#{ssxb},
+			#{ssxbmc},
+			#{sszy},
+			#{sszymc},
+			#{ssbj},
+			#{ssbjmc},
+			#{xslb},
+			#{xslbmc},
+			#{xszt},
+			#{xjzt},
+			#{byzt},
+			#{lxrxm},
+			#{lxrdh},
+			#{czry},
+			#{czrxm},
+			#{zsqk},
+			#{zsqkmc},
+			#{zp},
+			#{yhmc},
+			#{yhzh},
+			#{sydq},
+			#{sydqmc},
+			#{zsssjzl},
+			#{zsssfjh},
+			#{zsssjzlmc},
+			#{gatqwdm},
+			#{gatqwmc},
+			#{sfsqzn},
+			#{csdq},
+			#{csdqmc},
+			#{hkdz},
+			#{hksspcs},
+			#{hkszdq},
+			#{hkszdqmc},
+			#{jkzkdm},
+			#{jkzkmc},
+			#{zzdq},
+			#{zzdqmc},
+			#{jzdlxdm},
+			#{jzdlxmc},
+			#{sfdszn},
+			#{remark}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_xsxx where id in
+		<foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>

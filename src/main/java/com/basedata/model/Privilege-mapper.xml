@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="privilege">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Privilege">
+		select * from mitu_privilege
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and (name like CONCAT('%',#{params.condition},'%'))
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Privilege">
+		select *
+		from mitu_privilege where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Menu">
+		update mitu_privilege
+		<set>
+			<if test="roleId != null and roleId != ''">
+				roleId=#{roleId},
+			</if>
+			<if test="menuId != null and menuId != ''">
+				menuId=#{menuId},
+			</if>
+			<if test="addFlag != null and addFlag != ''">
+				addFlag=#{addFlag},
+			</if>
+			<if test="updateFlag != null and updateFlag != ''">
+				updateFlag=#{updateFlag},
+			</if>
+			<if test="deleteFlag != null and deleteFlag != ''">
+				deleteFlag=#{deleteFlag},
+			</if>
+			<if test="selectFlag != null and selectFlag != ''">
+				selectFlag=#{selectFlag},
+			</if>
+			<if test="type != null and type != ''">
+				type=#{type},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Privilege">
+		insert into mitu_privilege(
+		roleId,
+		menuId,
+		addFlag,
+		updateFlag,
+		deleteFlag,
+		selectFlag,
+		type)
+		values(
+		#{roleId},
+		#{menuId},
+		#{addFlag},
+		#{updateFlag},
+		#{deleteFlag},
+		#{selectFlag},
+		#{type}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_privilege where id in
+		<foreach collection="list" item="id" index="index" open="("
+			close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+
+	<delete id="deleteByRoleId" parameterType="String">
+		delete from
+		mitu_privilege where roleId=#{roleId}
+	</delete>
+</mapper>

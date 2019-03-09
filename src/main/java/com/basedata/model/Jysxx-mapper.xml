@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jysxx">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Jysxx">
+		select * from mitu_jysxx
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					name like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Jysxx">
+		select *
+		from mitu_jysxx where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Jysxx">
+		update mitu_jysxx
+		<set>
+			<if test="pxh != null and pxh != ''">
+				pxh=#{pxh},
+			</if>
+			<if test="jysdm != null and jysdm != ''">
+				jysdm=#{jysdm},
+			</if>
+			<if test="jysmc != null and jysmc != ''">
+				jysmc=#{jysmc},
+			</if>
+			<if test="ssxb != null and ssxb != ''">
+				ssxb=#{ssxb},
+			</if>
+			<if test="ssxy != null and ssxy != ''">
+				ssxy=#{ssxy},
+			</if>
+			<if test="fzr != null and fzr != ''">
+				fzr=#{fzr},
+			</if>
+			<if test="fzrxm != null and fzrxm != ''">
+				fzrxm=#{fzrxm},
+			</if>
+			<if test="remark != null and remark != ''">
+				remark=#{remark},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Jysxx">
+		insert into mitu_jysxx(
+			pxh,
+			jysdm,
+			jysmc,
+			ssxb,
+			ssxy,
+			fzr,
+			fzrxm,
+			remark)
+		values(
+			#{pxh},
+			#{jysdm},
+			#{jysmc},
+			#{ssxb},
+			#{ssxy},
+			#{fzr},
+			#{fzrxm},
+			#{remark}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_jysxx where id in
+		<foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>

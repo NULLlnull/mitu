@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kcxx">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Kcxx">
+		select * from mitu_kcxx
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					name like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Kcxx">
+		select *
+		from mitu_kcxx where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Kcxx">
+		update mitu_kcxx
+		<set>
+			<if test="ssxy != null and ssxy != ''">
+				ssxy=#{ssxy},
+			</if>
+			<if test="kcfl != null and kcfl != ''">
+				kcfl=#{kcfl},
+			</if>
+			<if test="kcdm != null and kcdm != ''">
+				kcdm=#{kcdm},
+			</if>
+			<if test="kcmc != null and kcmc != ''">
+				kcmc=#{kcmc},
+			</if>
+			<if test="kcjc != null and kcjc != ''">
+				kcjc=#{kcjc},
+			</if>
+			<if test="kcywmc != null and kcywmc != ''">
+				kcywmc=#{kcywmc},
+			</if>
+			<if test="ssjys != null and ssjys != ''">
+				ssjys=#{ssjys},
+			</if>
+			<if test="ssjysmc != null and ssjysmc != ''">
+				ssjysmc=#{ssjysmc},
+			</if>
+			<if test="pykssy != null and pykssy != ''">
+				pykssy=#{pykssy},
+			</if>
+			<if test="fjxrwkc != null and fjxrwkc != ''">
+				fjxrwkc=#{fjxrwkc},
+			</if>
+			<if test="mrkxkc != null and mrkxkc != ''">
+				mrkxkc=#{mrkxkc},
+			</if>
+			<if test="remark != null and remark != ''">
+				remark=#{remark},
+			</if>
+			<if test="create_time != null and create_time != ''">
+				create_time=#{create_time},
+			</if>
+			<if test="update_time != null and update_time != ''">
+				update_time=#{update_time},
+			</if>
+			<if test="oprybh != null and oprybh != ''">
+				oprybh=#{oprybh},
+			</if>
+			<if test="tzsl != null and tzsl != ''">
+				tzsl=#{tzsl},
+			</if>
+			<if test="zhfbsj != null and zhfbsj != ''">
+				zhfbsj=#{zhfbsj},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Kcxx">
+		insert into mitu_kcxx(
+			ssxy,
+			kcfl,
+			kcdm,
+			kcmc,
+			kcjc,
+			kcywmc,
+			ssjys,
+			ssjysmc,
+			pykssy,
+			fjxrwkc,
+			mrkxkc,
+			remark,
+			create_time,
+			update_time,
+			oprybh,
+			tzsl,
+			zhfbsj)
+		values(
+			#{ssxy},
+			#{kcfl},
+			#{kcdm},
+			#{kcmc},
+			#{kcjc},
+			#{kcywmc},
+			#{ssjys},
+			#{ssjysmc},
+			#{pykssy},
+			#{fjxrwkc},
+			#{mrkxkc},
+			#{remark},
+			#{create_time},
+			#{update_time},
+			#{oprybh},
+			#{tzsl},
+			#{zhfbsj}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_kcxx where id in
+		<foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>

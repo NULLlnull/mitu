@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="menu">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Menu">
+		select * from mitu_menu
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and (name like CONCAT('%',#{params.condition},'%'))
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Menu">
+		select *
+		from mitu_menu where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Menu">
+		update mitu_menu
+		<set>
+			<if test="name != null and name != ''">
+				name=#{name},
+			</if>
+			<if test="parentId != null and parentId != ''">
+				parentId=#{parentId},
+			</if>
+			<if test="resUrl != null and resUrl != ''">
+				resUrl=#{resUrl},
+			</if>
+			<if test="level != null and level != ''">
+				level=#{level},
+			</if>
+			<if test="status != null and status != ''">
+				status=#{status},
+			</if>
+			<if test="sysId != null and sysId != ''">
+				sysId=#{sysId},
+			</if>
+			<if test="icon != null and icon != ''">
+				icon=#{icon},
+			</if>
+			<if test="color != null and color != ''">
+				color=#{color},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Menu">
+		insert into mitu_menu(
+		name,
+		parentId,
+		type,
+		resUrl,
+		level,
+		status,
+		sysId,
+		icon,
+		color)
+		values(
+		#{name},
+		#{parentId},
+		#{type},
+		#{resUrl},
+		#{level},
+		#{status},
+		#{sysId},
+		#{color},
+		#{icon}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_menu where id in
+		<foreach collection="list" item="id" index="index" open="("
+			close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>

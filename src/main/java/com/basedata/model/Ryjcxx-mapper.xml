@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ryjcxx">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+		resultType="Ryjcxx">
+		select * from mitu_ryjcxx
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					rybh like CONCAT('%',#{params.condition},'%')
+					or
+					xm like CONCAT('%',#{params.condition},'%')
+					or
+					zzzcmc like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+				<if test="params.subSql != null and params.subSql !=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Ryjcxx">
+		select *
+		from mitu_ryjcxx where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Ryjcxx">
+		update mitu_ryjcxx
+		<set>
+			<if test="rybh != null and rybh != ''">
+				rybh=#{rybh},
+			</if>
+			<if test="xm != null and xm != ''">
+				xm=#{xm},
+			</if>
+			<if test="xb != null and xb != ''">
+				xb=#{xb },
+			</if>
+			<if test="zjlx != null and zjlx != ''">
+				zjlx=#{zjlx},
+			</if>
+			<if test="zjlxmc != null and zjlxmc != ''">
+				zjlxmc=#{zjlxmc},
+			</if>
+			<if test="zjh != null and zjh != ''">
+				zjh=#{zjh},
+			</if>
+			<if test="hklbdm != null and hklbdm != ''">
+				hklbdm=#{hklbdm},
+			</if>
+			<if test="hklbmc != null and hklbmc != ''">
+				hklbmc=#{hklbmc},
+			</if>
+			<if test="hkdq != null and hkdq != ''">
+				hkdq=#{hkdq},
+			</if>
+			<if test="hkdqmc != null and hkdqmc != ''">
+				hkdqmc=#{hkdqmc},
+			</if>
+			<if test="csny != null and csny != ''">
+				csny=#{csny},
+			</if>
+			<if test="mzdm != null and mzdm != ''">
+				mzdm=#{mzdm},
+			</if>
+			<if test="mzmc != null and mzmc != ''">
+				mzmc=#{mzmc},
+			</if>
+			<if test="zzmmdm != null and zzmmdm != ''">
+				zzmmdm=#{zzmmdm},
+			</if>
+			<if test="zzmmmc != null and zzmmmc != ''">
+				zzmmmc=#{zzmmmc},
+			</if>
+			<if test="hyzkdm != null and hyzkdm != ''">
+				hyzkdm=#{hyzkdm},
+			</if>
+			<if test="hyzkmc != null and hyzkmc != ''">
+				hyzkmc=#{hyzkmc},
+			</if>
+			<if test="jtdh != null and jtdh != ''">
+				jtdh=#{jtdh},
+			</if>
+			<if test="bgdh != null and bgdh != ''">
+				bgdh=#{bgdh},
+			</if>
+			<if test="yddh != null and yddh != ''">
+				yddh=#{yddh},
+			</if>
+			<if test="dzxx != null and dzxx != ''">
+				dzxx=#{dzxx},
+			</if>
+			<if test="jtdz != null and jtdz != ''">
+				jtdz=#{jtdz},
+			</if>
+			<if test="jtdzyb != null and jtdzyb != ''">
+				jtdzyb=#{jtdzyb},
+			</if>
+			<if test="zgxldm != null and zgxldm != ''">
+				zgxldm=#{zgxldm},
+			</if>
+			<if test="zgxlmc != null and zgxlmc != ''">
+				zgxlmc=#{zgxlmc},
+			</if>
+			<if test="zgxwdm != null and zgxwdm != ''">
+				zgxwdm=#{zgxwdm},
+			</if>
+			<if test="zgxwmc != null and zgxwmc != ''">
+				zgxwmc=#{zgxwmc},
+			</if>
+			<if test="byxx != null and byxx != ''">
+				byxx=#{byxx},
+			</if>
+			<if test="byzy != null and byzy != ''">
+				byzy=#{byzy},
+			</if>
+			<if test="zzzcdm != null and zzzcdm != ''">
+				zzzcdm=#{zzzcdm},
+			</if>
+			<if test="zzzcmc != null and zzzcmc != ''">
+				zzzcmc=#{zzzcmc},
+			</if>
+			<if test="pykssy != null and pykssy != ''">
+				pykssy=#{pykssy},
+			</if>
+			<if test="zym != null and zym != ''">
+				zym=#{zym},
+			</if>
+			<if test="cjdpsj != null and cjdpsj != ''">
+				cjdpsj=#{cjdpsj},
+			</if>
+			<if test="jhsyzk != null and jhsyzk != ''">
+				jhsyzk=#{jhsyzk},
+			</if>
+			<if test="jhsyzkmc != null and jhsyzkmc != ''">
+				jhsyzkmc=#{jhsyzkmc},
+			</if>
+			<if test="cardid != null and cardid != ''">
+				cardid=#{cardid},
+			</if>
+			<if test="gjdqdm != null and gjdqdm != ''">
+				gjdqdm=#{gjdqdm},
+			</if>
+			<if test="gjdqmc != null and gjdqmc != ''">
+				gjdqmc=#{gjdqmc},
+			</if>
+			<if test="xmpy != null and xmpy != ''">
+				xmpy=#{xmpy},
+			</if>
+			<if test="photo != null and photo != ''">
+				photo=#{photo},
+			</if>
+			<if test="audit_status != null">
+				audit_status=#{audit_status},
+			</if>
+			<if test="auditor != null and auditor != ''">
+				auditor=#{auditor},
+			</if>
+			<if test="audit_time != null and audit_time != ''">
+				audit_time=#{audit_time},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Ryjcxx">
+		insert into mitu_ryjcxx(
+		rybh,
+		xm,
+		xb,
+		zjlx,
+		zjlxmc,
+		zjh,
+		hklbdm,
+		hklbmc,
+		hkdq,
+		hkdqmc,
+		csny,
+		mzdm,
+		mzmc,
+		zzmmdm,
+		zzmmmc,
+		hyzkdm,
+		hyzkmc,
+		jtdh,
+		bgdh,
+		yddh,
+		dzxx,
+		jtdz,
+		jtdzyb,
+		zgxldm,
+		zgxlmc,
+		zgxwdm,
+		zgxwmc,
+		byxx,
+		byzy,
+		zzzcdm,
+		zzzcmc,
+		pykssy,
+		zym,
+		cjdpsj,
+		jhsyzk,
+		jhsyzkmc,
+		cardid,
+		gjdqdm,
+		gjdqmc,
+		xmpy,
+		photo
+		)
+		values(
+		#{rybh},
+		#{xm},
+		#{xb},
+		#{zjlx},
+		#{zjlxmc},
+		#{zjh},
+		#{hklbdm},
+		#{hklbmc},
+		#{hkdq},
+		#{hkdqmc},
+		#{csny},
+		#{mzdm},
+		#{mzmc},
+		#{zzmmdm},
+		#{zzmmmc},
+		#{hyzkdm},
+		#{hyzkmc},
+		#{jtdh},
+		#{bgdh},
+		#{yddh},
+		#{dzxx},
+		#{jtdz},
+		#{jtdzyb},
+		#{zgxldm},
+		#{zgxlmc},
+		#{zgxwdm},
+		#{zgxwmc},
+		#{byxx},
+		#{byzy},
+		#{zzzcdm},
+		#{zzzcmc},
+		#{pykssy},
+		#{zym},
+		#{cjdpsj},
+		#{jhsyzk},
+		#{jhsyzkmc},
+		#{cardid},
+		#{gjdqdm},
+		#{gjdqmc},
+		#{xmpy},
+		#{photo}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_ryjcxx where id in
+		<foreach collection="list" item="id" index="index" open="("
+			close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>

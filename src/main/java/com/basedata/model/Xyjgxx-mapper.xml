@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xyjgxx">
+	<select id="queryByParams" parameterType="java.util.HashMap"
+			resultType="Xyjgxx">
+		select * from mitu_xyjgxx
+		<where>
+			<if test="params !=null">
+				<if test="params.condition != null and params.condition !=''">
+					and
+					(
+					jgdm like CONCAT('%',#{params.condition},'%')
+					or
+					jgmc like CONCAT('%',#{params.condition},'%')
+					)
+				</if>
+
+				<if test="params.subSql != null and params.subSql!=''">
+					and ${params.subSql}
+				</if>
+			</if>
+		</where>
+	</select>
+
+	<select id="queryAll" parameterType="java.util.HashMap"
+			resultType="Xyjgxx">
+		select * from mitu_xyjgxx
+	</select>
+
+	<select id="getById" parameterType="String" resultType="Xyjgxx">
+		select *
+		from mitu_xyjgxx where id=#{id}
+	</select>
+
+	<update id="update" parameterType="Xyjgxx">
+		update mitu_xyjgxx
+		<set>
+			<if test="jgdm != null and jgdm != ''">
+				jgdm=#{jgdm},
+			</if>
+			<if test="jgmc != null and jgmc != ''">
+				jgmc=#{jgmc},
+			</if>
+			<if test="ssxy != null and ssxy != ''">
+				ssxy=#{ssxy},
+			</if>
+			<if test="pid != null and pid != ''">
+				pid=#{pid},
+			</if>
+			<if test="path != null and path != ''">
+				path=#{path},
+			</if>
+			<if test="level != null and level != ''">
+				level=#{level},
+			</if>
+			<if test="sfszjg != null and sfszjg != ''">
+				sfszjg=#{sfszjg},
+			</if>
+			<if test="sfjxxb != null and sfjxxb != ''">
+				sfjxxb=#{sfjxxb},
+			</if>
+			<if test="remark != null and remark != ''">
+				remark=#{remark},
+			</if>
+			<if test="jgdh != null and jgdh != ''">
+				jgdh=#{jgdh},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+
+	<insert id="save" parameterType="Xyjgxx">
+		insert into mitu_xyjgxx(
+			jgdm,
+			jgmc,
+			ssxy,
+			pid,
+			path,
+			level,
+			sfszjg,
+			sfjxxb,
+			remark,
+			jgdh)
+		values(
+			#{jgdm},
+			#{jgmc},
+			#{ssxy},
+			#{pid},
+			#{path},
+			#{level},
+			#{sfszjg},
+			#{sfjxxb},
+			#{remark},
+			#{jgdh}
+		)
+	</insert>
+
+	<delete id="deleteByPrimaryKeys" parameterType="java.util.List">
+		delete from mitu_xyjgxx where id in
+		<foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+			#{id,jdbcType=INTEGER}
+		</foreach>
+	</delete>
+</mapper>
